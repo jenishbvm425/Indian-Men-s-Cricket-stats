@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Strikers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f7fc;
+      margin: 20px;
+    }
+
+    .header {
+      background-color: #1d4e89;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header img {
+      border-radius: 50%;
+      width: 100px;
+      margin-right: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 14px;
+    }
+
+    .header-stats div {
+      margin-right: 15px;
+    }
+
+    .strike-rate-box {
+      background-color: #c4ecff;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 8px;
+      color: #000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #e0ecff;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f7ff;
+    }
+
+    .rank {
+      font-weight: bold;
+      font-size: 20px;
+      color: #1d4e89;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-content">
+      
+      <div>
+        <h1>#1 Surya Kumar Yadav</h1>
+        <div class="header-stats">
+          <div>Matches: 83</div>
+          <div>Inns: 79</div>
+          <div>Avg: 38.20</div>
+          <div>SR: 167.07</div>
+          <div>HS: 117</div>
+          <div>4’s: 237</div>
+          <div>6’s: 146</div>
+          <div>50’s: 21</div>
+          <div>100’s: 4</div>
+          <div>Runs: 2598</div>
+        </div>
+      </div>
+    </div>
+    <div class="strike-rate-box">
+      <h2>167.07</h2>
+      <p>Highest Strikerate</p>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Player</th>
+      <th>Matches</th>
+      <th>Inns</th>
+      <th>Avg</th>
+      <th>SR</th>
+      <th>HS</th>
+      <th>4’s</th>
+      <th>6’s</th>
+      <th>50’s</th>
+      <th>100’s</th>
+      <th>Runs</th>
+    </tr>
+    <tr>
+      <td class="rank">2</td>
+      <td>Yashasvi Jaiswal</td>
+      <td>23</td>
+      <td>22</td>
+      <td>36.15</td>
+      <td>164.31</td>
+      <td>100</td>
+      <td>82</td>
+      <td>38</td>
+      <td>5</td>
+      <td>1</td>
+      <td>723</td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td>Rinku Singh</td>
+      <td>33</td>
+      <td>24</td>
+      <td>42.00</td>
+      <td>161.06</td>
+      <td>69</td>
+      <td>45</td>
+      <td>31</td>
+      <td>3</td>
+      <td>–</td>
+      <td>546</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td>N. Tilak Varma</td>
+      <td>25</td>
+      <td>24</td>
+      <td>49.93</td>
+      <td>155.07</td>
+      <td>120</td>
+      <td>61</td>
+      <td>43</td>
+      <td>3</td>
+      <td>2</td>
+      <td>749</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td>Sanju Samson</td>
+      <td>42</td>
+      <td>38</td>
+      <td>25.32</td>
+      <td>152.38</td>
+      <td>111</td>
+      <td>71</td>
+      <td>49</td>
+      <td>2</td>
+      <td>3</td>
+      <td>861</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td>Dinesh Karthik</td>
+      <td>60</td>
+      <td>48</td>
+      <td>26.38</td>
+      <td>142.61</td>
+      <td>55</td>
+      <td>71</td>
+      <td>28</td>
+      <td>1</td>
+      <td>–</td>
+      <td>686</td>
+    </tr>
+    
+    <tr>
+      <td>7</td>
+      <td>Hardik Pandya</td>
+      <td>114</td>
+      <td>90</td>
+      <td>27.87</td>
+      <td>141.67</td>
+      <td>71</td>
+      <td>135</td>
+      <td>95</td>
+      <td>5</td>
+      <td>–</td>
+      <td>1812</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rohit Sharma</td>
+      <td>159</td>
+      <td>151</td>
+      <td>32.05</td>
+      <td>140.89</td>
+      <td>121</td>
+      <td>383</td>
+      <td>205</td>
+      <td>32</td>
+      <td>5</td>
+      <td>4231</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Shivam Dube</td>
+      <td>35</td>
+      <td>26</td>
+      <td>31.23</td>
+      <td>140.10</td>
+      <td>63</td>
+      <td>37</td>
+      <td>28</td>
+      <td>4</td>
+      <td>–</td>
+      <td>531</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Axar Patel</td>
+      <td>71</td>
+      <td>44</td>
+      <td>18.44</td>
+      <td>139.32</td>
+      <td>65</td>
+      <td>41</td>
+      <td>23</td>
+      <td>1</td>
+      <td>–</td>
+      <td>535</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>KL Rahul</td>
+      <td>72</td>
+      <td>68</td>
+      <td>37.75</td>
+      <td>139.12</td>
+      <td>110</td>
+      <td>191</td>
+      <td>99</td>
+      <td>22</td>
+      <td>2</td>
+      <td>2265</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Virat Kohli</td>
+      <td>125</td>
+      <td>117</td>
+      <td>48.69</td>
+      <td>137.04</td>
+      <td>122</td>
+      <td>369</td>
+      <td>124</td>
+      <td>38</td>
+      <td>1</td>
+      <td>4188</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Yuvraj Singh</td>
+      <td>58</td>
+      <td>51</td>
+      <td>28.02</td>
+      <td>136.38</td>
+      <td>77</td>
+      <td>77</td>
+      <td>74</td>
+      <td>8</td>
+      <td>–</td>
+      <td>1177</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Shreyas Iyer</td>
+      <td>51</td>
+      <td>47</td>
+      <td>30.66</td>
+      <td>136.12</td>
+      <td>74</td>
+      <td>90</td>
+      <td>44</td>
+      <td>8</td>
+      <td>–</td>
+      <td>1104</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Suresh Raina</td>
+      <td>78</td>
+      <td>66</td>
+      <td>29.18</td>
+      <td>134.87</td>
+      <td>101</td>
+      <td>145</td>
+      <td>58</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1605</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Rishabh Pant</td>
+      <td>76</td>
+      <td>66</td>
+      <td>23.25</td>
+      <td>127.26</td>
+      <td>65</td>
+      <td>111</td>
+      <td>44</td>
+      <td>3</td>
+      <td>–</td>
+      <td>1209</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Ravindra Jadeja</td>
+      <td>74</td>
+      <td>41</td>
+      <td>21.45</td>
+      <td>127.16</td>
+      <td>46</td>
+      <td>39</td>
+      <td>14</td>
+      <td>–</td>
+      <td>–</td>
+      <td>515</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Shikhar Dhawan</td>
+      <td>68</td>
+      <td>66</td>
+      <td>27.92</td>
+      <td>126.36</td>
+      <td>92</td>
+      <td>191</td>
+      <td>50</td>
+      <td>11</td>
+      <td>–</td>
+      <td>1759</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Manish Pandey</td>
+      <td>39</td>
+      <td>33</td>
+      <td>44.31</td>
+      <td>126.15</td>
+      <td>79</td>
+      <td>49</td>
+      <td>19</td>
+      <td>3</td>
+      <td>–</td>
+      <td>709</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>MS Dhoni</td>
+      <td>98</td>
+      <td>85</td>
+      <td>37.60</td>
+      <td>126.13</td>
+      <td>56</td>
+      <td>116</td>
+      <td>52</td>
+      <td>2</td>
+      <td>–</td>
+      <td>1617</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Ishan Kishan</td>
+      <td>32</td>
+      <td>32</td>
+      <td>25.67</td>
+      <td>124.37</td>
+      <td>89</td>
+      <td>79</td>
+      <td>36</td>
+      <td>6</td>
+      <td>–</td>
+      <td>796</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Washington Sundar</td>
+      <td>54</td>
+      <td>22</td>
+      <td>13.78</td>
+      <td>121.38</td>
+      <td>50</td>
+      <td>16</td>
+      <td>9</td>
+      <td>1</td>
+      <td>–</td>
+      <td>193</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Gautam Gambhir</td>
+      <td>37</td>
+      <td>36</td>
+      <td>27.41</td>
+      <td>119.02</td>
+      <td>75</td>
+      <td>109</td>
+      <td>10</td>
+      <td>7</td>
+      <td>–</td>
+      <td>932</td>
+    </tr>
+  </table>
+  
+
+</body>
+</html>

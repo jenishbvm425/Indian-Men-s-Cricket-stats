@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Bowlers</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-container {
+      background-color: #2c4e83;
+      color: white;
+      display: flex;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 20px 30px;
+      align-items: center;
+      position: relative;
+    }
+
+    .top-container img {
+      height: 130px;
+      border-radius: 8px;
+      margin-right: 25px;
+    }
+
+    .top-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-rank {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .top-name {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .stat-box {
+      font-size: 14px;
+    }
+
+    .stat-box span {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .best-avg-box {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      background-color: #d2f0f3;
+      color: #00454a;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .best-avg-box small {
+      display: block;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      text-align: center;
+      font-size: 14px;
+      border-bottom: 1px solid #e0e6ed;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #555;
+    }
+
+    td:nth-child(2) {
+      text-align: left;
+      color: #2c4e83;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-container">
+    <img src="https://i.imgur.com/nD1gG23.png" alt="Kuldeep Yadav">
+    <div class="top-info">
+      <div class="top-rank">#1</div>
+      <div class="top-name"><span style="font-weight: 400;">Kuldeep</span> YADAV</div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box"><span>40</span>Matches</div>
+      <div class="stat-box"><span>39</span>Inns</div>
+      <div class="stat-box"><span>69</span>Wickets</div>
+      <div class="stat-box"><span>14.07</span>Avg.</div>
+      <div class="stat-box"><span>5/17</span>Bowl. Fig.</div>
+      <div class="stat-box"><span>6.77</span>Economy</div>
+      <div class="stat-box"><span>12.4</span>SR</div>
+      <div class="stat-box"><span>971</span>Runs</div>
+    </div>
+    <div class="best-avg-box">
+      14.07
+      <small>Best Averages</small>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Matches</th>
+        <th>Inns</th>
+        <th>Wickets</th>
+        <th>Avg</th>
+        <th>Bowling Figure</th>
+        <th>Economy Rate</th>
+        <th>SR</th>
+        <th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td><td>Jasprit Bumrah</td><td>70</td><td>69</td><td>89</td><td>17.74</td><td>3/7</td><td>6.27</td><td>16.9</td><td>1579</td>
+      </tr>
+      <tr>
+        <td>3</td><td>Arshdeep Singh</td><td>63</td><td>63</td><td>99</td><td>18.30</td><td>4/9</td><td>8.29</td><td>13.2</td><td>1812</td>
+      </tr>
+      <tr>
+        <td>4</td><td>Ravi Bishnoi</td><td>42</td><td>42</td><td>61</td><td>19.37</td><td>4/13</td><td>7.35</td><td>15.8</td><td>1182</td>
+      </tr>
+      <tr>
+        <td>5</td><td>Axar Patel</td><td>71</td><td>68</td><td>71</td><td>22.12</td><td>3/9</td><td>7.30</td><td>18.1</td><td>1571</td>
+      </tr>
+      <tr>
+        <td>6</td><td>Ashish Nehra</td><td>27</td><td>27</td><td>34</td><td>22.29</td><td>3/19</td><td>7.73</td><td>17.2</td><td>758</td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="name">Bhuvneshwar Kumar</td>
+        <td>87</td><td>86</td><td>90</td><td>23.10</td><td>5/4</td><td>6.96</td><td>19.9</td><td>2079</td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="name">Ravichandran Ashwin</td>
+        <td>65</td><td>65</td><td>72</td><td>23.22</td><td>4/8</td><td>6.90</td><td>20.1</td><td>1672</td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="name">Shardul Thakur</td>
+        <td>25</td><td>24</td><td>33</td><td>23.39</td><td>4/27</td><td>9.15</td><td>15.3</td><td>772</td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="name">Washington Sundar</td>
+        <td>54</td><td>52</td><td>48</td><td>23.50</td><td>3/15</td><td>6.94</td><td>20.3</td><td>1128</td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="name">Deepak Chahar</td>
+        <td>25</td><td>25</td><td>31</td><td>24.09</td><td>6/7</td><td>8.30</td><td>17.4</td><td>747</td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="name">Yuzvendra Chahal</td>
+        <td>80</td><td>79</td><td>96</td><td>25.09</td><td>6/25</td><td>8.19</td><td>18.3</td><td>2409</td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="name">Hardik Pandya</td>
+        <td>114</td><td>102</td><td>94</td><td>26.43</td><td>4/16</td><td>8.20</td><td>19.3</td><td>2485</td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="name">Ravindra Jadeja</td>
+        <td>74</td><td>71</td><td>54</td><td>29.85</td><td>3/15</td><td>7.13</td><td>25.1</td><td>1612</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

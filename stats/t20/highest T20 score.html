@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top T20 Batters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-player {
+      display: flex;
+      background-color: #2d5d94;
+      color: white;
+      padding: 20px;
+      border-bottom: 8px solid #d6b887;
+      align-items: center;
+      position: relative;
+    }
+
+    .top-player img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .top-player .info {
+      flex-grow: 1;
+    }
+
+    .top-player .info h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .top-player .info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .top-player .stats {
+      display: grid;
+      grid-template-columns: repeat(10, auto);
+      gap: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .top-player .highest-score {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: #d4f3ff;
+      color: #08597d;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      margin-top: 0;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #f1f1f1;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .rank {
+      font-weight: bold;
+      font-size: 20px;
+      color: #2d5d94;
+    }
+
+    td span.small {
+      display: block;
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-player">
+  <img src="https://via.placeholder.com/100" alt="Abhishek Sharma">
+  <div class="info">
+    <h1>#1 Abhishek <strong>SHARMA</strong></h1>
+    <div class="stats">
+      <div>Matches<br><strong>17</strong></div>
+      <div>Inns<br><strong>16</strong></div>
+      <div>Avg.<br><strong>33.43</strong></div>
+      <div>SR<br><strong>193.84</strong></div>
+      <div>HS<br><strong>135</strong></div>
+      <div>4’s<br><strong>46</strong></div>
+      <div>6’s<br><strong>41</strong></div>
+      <div>50’s<br><strong>2</strong></div>
+      <div>100’s<br><strong>2</strong></div>
+      <div>Runs<br><strong>535</strong></div>
+    </div>
+  </div>
+  <div class="highest-score">
+    <div style="font-size: 24px;"><strong>135</strong></div>
+    <div>Highest Score</div>
+  </div>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td class="rank">2</td>
+      <td>Shubman Gill<br><span class="small">21 Matches</span></td>
+      <td>21<br><span class="small">Inns</span></td>
+      <td>30.42<br><span class="small">Avg</span></td>
+      <td>139.27<br><span class="small">SR</span></td>
+      <td>126<br><span class="small">HS</span></td>
+      <td>60<br><span class="small">4’s</span></td>
+      <td>22<br><span class="small">6’s</span></td>
+      <td>3<br><span class="small">50’s</span></td>
+      <td>1<br><span class="small">100’s</span></td>
+      <td>578<br><span class="small">Runs</span></td>
+    </tr>
+    <tr>
+      <td class="rank">3</td>
+      <td>Ruturaj Gaikwad<br><span class="small">23 Matches</span></td>
+      <td>20</td>
+      <td>39.56</td>
+      <td>143.53</td>
+      <td>123</td>
+      <td>65</td>
+      <td>24</td>
+      <td>4</td>
+      <td>1</td>
+      <td>633</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td>Virat Kohli<br><span class="small">125 Matches</span></td>
+      <td>117</td>
+      <td>48.69</td>
+      <td>137.04</td>
+      <td>122</td>
+      <td>369</td>
+      <td>124</td>
+      <td>38</td>
+      <td>1</td>
+      <td>4188</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td>Rohit Sharma<br><span class="small">159 Matches</span></td>
+      <td>151</td>
+      <td>32.05</td>
+      <td>140.89</td>
+      <td>121</td>
+      <td>383</td>
+      <td>205</td>
+      <td>32</td>
+      <td>5</td>
+      <td>4231</td>
+    </tr>
+    <tr>
+      <td class="rank">6</td>
+      <td>N. Tilak Varma<br><span class="small">25 Matches</span></td>
+      <td>24</td>
+      <td>49.93</td>
+      <td>155.07</td>
+      <td>120</td>
+      <td>61</td>
+      <td>43</td>
+      <td>3</td>
+      <td>2</td>
+      <td>749</td>
+    </tr>
+    <tr>
+        <td class="rank">7</td>
+        <td>Surya Kumar Yadav<br><span class="small">83 Matches</span></td>
+        <td>79</td>
+        <td>38.20</td>
+        <td>167.07</td>
+        <td>117</td>
+        <td>237</td>
+        <td>146</td>
+        <td>21</td>
+        <td>4</td>
+        <td>2598</td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td>Sanju Samson<br><span class="small">42 Matches</span></td>
+        <td>38</td>
+        <td>25.32</td>
+        <td>152.38</td>
+        <td>111</td>
+        <td>71</td>
+        <td>49</td>
+        <td>2</td>
+        <td>3</td>
+        <td>861</td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td>KL Rahul<br><span class="small">72 Matches</span></td>
+        <td>68</td>
+        <td>37.75</td>
+        <td>139.12</td>
+        <td>110</td>
+        <td>191</td>
+        <td>99</td>
+        <td>22</td>
+        <td>2</td>
+        <td>2265</td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td>Deepak Hooda<br><span class="small">21 Matches</span></td>
+        <td>17</td>
+        <td>30.66</td>
+        <td>147.20</td>
+        <td>104</td>
+        <td>29</td>
+        <td>18</td>
+        <td>–</td>
+        <td>1</td>
+        <td>368</td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td>Suresh Raina<br><span class="small">78 Matches</span></td>
+        <td>66</td>
+        <td>29.18</td>
+        <td>134.87</td>
+        <td>101</td>
+        <td>145</td>
+        <td>58</td>
+        <td>5</td>
+        <td>1</td>
+        <td>1605</td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td>Yashasvi Jaiswal<br><span class="small">23 Matches</span></td>
+        <td>22</td>
+        <td>36.15</td>
+        <td>164.31</td>
+        <td>100</td>
+        <td>82</td>
+        <td>38</td>
+        <td>5</td>
+        <td>1</td>
+        <td>723</td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td>Shikhar Dhawan<br><span class="small">68 Matches</span></td>
+        <td>66</td>
+        <td>27.92</td>
+        <td>126.36</td>
+        <td>92</td>
+        <td>191</td>
+        <td>50</td>
+        <td>11</td>
+        <td>–</td>
+        <td>1759</td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td>Ishan Kishan<br><span class="small">32 Matches</span></td>
+        <td>32</td>
+        <td>25.67</td>
+        <td>124.37</td>
+        <td>89</td>
+        <td>79</td>
+        <td>36</td>
+        <td>6</td>
+        <td>–</td>
+        <td>796</td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td>Manish Pandey<br><span class="small">39 Matches</span></td>
+        <td>33</td>
+        <td>44.31</td>
+        <td>126.15</td>
+        <td>79</td>
+        <td>49</td>
+        <td>19</td>
+        <td>3</td>
+        <td>–</td>
+        <td>709</td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td>Yuvraj Singh<br><span class="small">58 Matches</span></td>
+        <td>51</td>
+        <td>28.02</td>
+        <td>136.38</td>
+        <td>77</td>
+        <td>77</td>
+        <td>74</td>
+        <td>8</td>
+        <td>–</td>
+        <td>1177</td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td>Gautam Gambhir<br><span class="small">37 Matches</span></td>
+        <td>36</td>
+        <td>27.41</td>
+        <td>119.02</td>
+        <td>75</td>
+        <td>109</td>
+        <td>10</td>
+        <td>7</td>
+        <td>–</td>
+        <td>932</td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td>Shreyas Iyer<br><span class="small">51 Matches</span></td>
+        <td>47</td>
+        <td>30.66</td>
+        <td>136.12</td>
+        <td>74</td>
+        <td>90</td>
+        <td>44</td>
+        <td>8</td>
+        <td>–</td>
+        <td>1104</td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td>Nitish Kumar Reddy<br><span class="small">4 Matches</span></td>
+        <td>3</td>
+        <td>45.00</td>
+        <td>180.00</td>
+        <td>74</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1</td>
+        <td>–</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td>Hardik Pandya<br><span class="small">114 Matches</span></td>
+        <td>90</td>
+        <td>27.87</td>
+        <td>141.67</td>
+        <td>71</td>
+        <td>135</td>
+        <td>95</td>
+        <td>5</td>
+        <td>–</td>
+        <td>1812</td>
+      </tr>
+      <tr>
+        <td class="rank">21</td>
+        <td>Rinku Singh<br><span class="small">33 Matches</span></td>
+        <td>24</td>
+        <td>42.00</td>
+        <td>161.06</td>
+        <td>69</td>
+        <td>45</td>
+        <td>31</td>
+        <td>3</td>
+        <td>–</td>
+        <td>546</td>
+      </tr>
+      <tr>
+        <td class="rank">22</td>
+        <td>Virender Sehwag<br><span class="small">19 Matches</span></td>
+        <td>18</td>
+        <td>21.88</td>
+        <td>145.38</td>
+        <td>68</td>
+        <td>43</td>
+        <td>16</td>
+        <td>2</td>
+        <td>–</td>
+        <td>394</td>
+      </tr>
+      <tr>
+        <td class="rank">23</td>
+        <td>Rishabh Pant<br><span class="small">76 Matches</span></td>
+        <td>66</td>
+        <td>23.25</td>
+        <td>127.26</td>
+        <td>65</td>
+        <td>111</td>
+        <td>44</td>
+        <td>3</td>
+        <td>–</td>
+        <td>1209</td>
+      </tr>
+      <tr>
+        <td class="rank">24</td>
+        <td>Axar Patel<br><span class="small">71 Matches</span></td>
+        <td>44</td>
+        <td>18.44</td>
+        <td>139.32</td>
+        <td>65</td>
+        <td>41</td>
+        <td>23</td>
+        <td>1</td>
+        <td>–</td>
+        <td>535</td>
+      </tr>
+      <tr>
+        <td class="rank">25</td>
+        <td>Shivam Dube<br><span class="small">35 Matches</span></td>
+        <td>26</td>
+        <td>31.23</td>
+        <td>140.10</td>
+        <td>63</td>
+        <td>37</td>
+        <td>28</td>
+        <td>4</td>
+        <td>–</td>
+        <td>531</td>
+      </tr>
+      
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Indian Bowlers - T20I</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f2f5;
+    }
+
+    .top-container {
+      background-color: #2d5b99;
+      color: white;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .player-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .top-details {
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+
+    .top-details h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .top-details .subname {
+      font-size: 18px;
+      margin-top: -10px;
+    }
+
+    .top-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .top-stats div {
+      background-color: #406cb6;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .wicket-box {
+      background-color: #d6f6ff;
+      color: #1a87a3;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .wicket-box span {
+      display: block;
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f2f6fc;
+      color: #333;
+      font-weight: bold;
+    }
+
+    td:first-child {
+      color: #2d5b99;
+      font-weight: bold;
+    }
+
+    td:nth-child(2) {
+      text-align: left;
+      font-weight: 500;
+      color: #2d5b99;
+    }
+
+    tr:hover {
+      background-color: #f9fbff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-container">
+    <img src="https://i.imgur.com/tV5EVnG.png" alt="Arshdeep Singh" class="player-photo">
+    <div class="top-details">
+      <h1>#1 Arshdeep SINGH</h1>
+      <div class="top-stats">
+        <div>Matches<br><strong>63</strong></div>
+        <div>Inns<br><strong>63</strong></div>
+        <div>Wickets<br><strong>99</strong></div>
+        <div>Avg.<br><strong>18.30</strong></div>
+        <div>Bowl. Fig.<br><strong>4/9</strong></div>
+        <div>Economy<br><strong>8.29</strong></div>
+        <div>SR<br><strong>13.2</strong></div>
+        <div>Runs<br><strong>1812</strong></div>
+      </div>
+    </div>
+    <div class="wicket-box">
+      99<br><span>Most wickets</span>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Matches</th>
+        <th>Inns</th>
+        <th>Wickets</th>
+        <th>Avg</th>
+        <th>Bowling Figure</th>
+        <th>Economy Rate</th>
+        <th>SR</th>
+        <th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>Yuzvendra Chahal</td>
+        <td>80</td>
+        <td>79</td>
+        <td>96</td>
+        <td>25.09</td>
+        <td>6/25</td>
+        <td>8.19</td>
+        <td>18.3</td>
+        <td>2409</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Hardik Pandya</td>
+        <td>114</td>
+        <td>102</td>
+        <td>94</td>
+        <td>26.43</td>
+        <td>4/16</td>
+        <td>8.20</td>
+        <td>19.3</td>
+        <td>2485</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bhuvneshwar Kumar</td>
+        <td>87</td>
+        <td>86</td>
+        <td>90</td>
+        <td>23.10</td>
+        <td>5/4</td>
+        <td>6.96</td>
+        <td>19.9</td>
+        <td>2079</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Jasprit Bumrah</td>
+        <td>70</td>
+        <td>69</td>
+        <td>89</td>
+        <td>17.74</td>
+        <td>3/7</td>
+        <td>6.27</td>
+        <td>16.9</td>
+        <td>1579</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Ravichandran Ashwin</td>
+        <td>65</td>
+        <td>65</td>
+        <td>72</td>
+        <td>23.22</td>
+        <td>4/8</td>
+        <td>6.90</td>
+        <td>20.1</td>
+        <td>1672</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Axar Patel</td>
+        <td>71</td>
+        <td>68</td>
+        <td>71</td>
+        <td>22.12</td>
+        <td>3/9</td>
+        <td>7.30</td>
+        <td>18.1</td>
+        <td>1571</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Kuldeep Yadav</td>
+        <td>40</td>
+        <td>39</td>
+        <td>69</td>
+        <td>14.07</td>
+        <td>5/17</td>
+        <td>6.77</td>
+        <td>12.4</td>
+        <td>971</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Ravi Bishnoi</td>
+        <td>42</td>
+        <td>42</td>
+        <td>61</td>
+        <td>19.37</td>
+        <td>4/13</td>
+        <td>7.35</td>
+        <td>15.8</td>
+        <td>1182</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Ravindra Jadeja</td>
+        <td>74</td>
+        <td>71</td>
+        <td>54</td>
+        <td>29.85</td>
+        <td>3/15</td>
+        <td>7.13</td>
+        <td>25.1</td>
+        <td>1612</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Washington Sundar</td>
+        <td>54</td>
+        <td>52</td>
+        <td>48</td>
+        <td>23.50</td>
+        <td>3/15</td>
+        <td>6.94</td>
+        <td>20.3</td>
+        <td>1128</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Ashish Nehra</td>
+        <td>27</td>
+        <td>27</td>
+        <td>34</td>
+        <td>22.29</td>
+        <td>3/19</td>
+        <td>7.73</td>
+        <td>17.2</td>
+        <td>758</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Varun Chakaravarthy</td>
+        <td>18</td>
+        <td>18</td>
+        <td>33</td>
+        <td>14.57</td>
+        <td>5/17</td>
+        <td>7.02</td>
+        <td>12.4</td>
+        <td>481</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Shardul Thakur</td>
+        <td>25</td>
+        <td>24</td>
+        <td>33</td>
+        <td>23.39</td>
+        <td>4/27</td>
+        <td>9.15</td>
+        <td>15.3</td>
+        <td>772</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Deepak Chahar</td>
+        <td>25</td>
+        <td>25</td>
+        <td>31</td>
+        <td>24.09</td>
+        <td>6/7</td>
+        <td>8.30</td>
+        <td>17.4</td>
+        <td>747</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Harshal Patel</td>
+        <td>25</td>
+        <td>24</td>
+        <td>29</td>
+        <td>26.55</td>
+        <td>4/25</td>
+        <td>9.18</td>
+        <td>17.3</td>
+        <td>770</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Yuvraj Singh</td>
+        <td>58</td>
+        <td>31</td>
+        <td>28</td>
+        <td>17.82</td>
+        <td>3/17</td>
+        <td>7.06</td>
+        <td>15.1</td>
+        <td>499</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Irfan Pathan</td>
+        <td>24</td>
+        <td>23</td>
+        <td>28</td>
+        <td>22.07</td>
+        <td>3/16</td>
+        <td>8.02</td>
+        <td>16.5</td>
+        <td>618</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Avesh Khan</td>
+        <td>25</td>
+        <td>24</td>
+        <td>27</td>
+        <td>27.85</td>
+        <td>4/18</td>
+        <td>9.04</td>
+        <td>18.4</td>
+        <td>752</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Mohammad Shami</td>
+        <td>25</td>
+        <td>25</td>
+        <td>27</td>
+        <td>28.18</td>
+        <td>3/15</td>
+        <td>8.95</td>
+        <td>18.8</td>
+        <td>761</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Harbhajan Singh</td>
+        <td>28</td>
+        <td>27</td>
+        <td>25</td>
+        <td>25.32</td>
+        <td>4/12</td>
+        <td>6.20</td>
+        <td>24.4</td>
+        <td>633</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Mukesh Kumar</td>
+        <td>17</td>
+        <td>17</td>
+        <td>20</td>
+        <td>24.35</td>
+        <td>4/22</td>
+        <td>9.01</td>
+        <td>16.2</td>
+        <td>487</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Ashok Dinda</td>
+        <td>9</td>
+        <td>9</td>
+        <td>17</td>
+        <td>14.41</td>
+        <td>4/19</td>
+        <td>8.16</td>
+        <td>10.5</td>
+        <td>245</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Zaheer Khan</td>
+        <td>17</td>
+        <td>17</td>
+        <td>17</td>
+        <td>26.35</td>
+        <td>4/19</td>
+        <td>7.63</td>
+        <td>20.7</td>
+        <td>448</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Amit Mishra</td>
+        <td>10</td>
+        <td>10</td>
+        <td>16</td>
+        <td>15.00</td>
+        <td>3/24</td>
+        <td>6.31</td>
+        <td>14.2</td>
+        <td>240</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>Syed Khaleel Ahmed</td>
+        <td>18</td>
+        <td>18</td>
+        <td>16</td>
+        <td>35.12</td>
+        <td>2/27</td>
+        <td>8.51</td>
+        <td>24.7</td>
+        <td>562</td>
+      </tr>
+      </tbody>
+      </table>
+
+</body>
+</html>
