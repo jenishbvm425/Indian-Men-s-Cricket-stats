@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure Carousel</title>
+  <style>
+    * { 
+      box-sizing: border-box;
+    }
+
+    body, html {
+        background-color: rgb(208, 230, 249);
+      margin: 15px;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      overflow: hidden;
+      background-color: #97a6e5;
+      border-radius: 10px;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+    
+      width: 100%;
+      height: 100%;
+      flex: 0 0 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      /* flex-direction: column; */
+      padding-left: 5%;
+      background-color: #111010;
+      color: white;
+      
+    }
+
+    .carousel-item h1 {
+      font-size: 3rem;
+      z-index: 1;
+    }
+
+    .carousel-item p {
+      font-size: 1.25rem;
+      z-index: 1;
+      
+    }
+    .carousel-item .underline{
+      width: 200px;
+      height: 5px;
+      background-color: #ec2318;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+   
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1;
+      padding: 0 15px;
+    }
+
+    .carousel-btn.prev {
+      left: 10px;
+    }
+
+    .carousel-btn.next {
+      right: 10px;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .carousel-indicators span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background: #ccc;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .carousel-indicators .active {
+      background: #fff;
+    }
+    
+    /* Existing styles... (same as previous response) */
+/* Just add this at the end for the modal */
+    .container {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;;
+      margin: 15px;
+    }
+    .box video {
+      width: 27vw;
+      height: 14vh;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      justify-items: center;
+    }
+
+   .box {
+      display: flex;
+      flex-direction: column;
+       background-color: rgb(5, 37, 105);
+       padding: 10px;
+       height: 30vh;
+       width: 30vw;
+       border-radius: 10px;
+       margin-left: 15px;
+       color: white;
+       margin-top: 10px;
+       margin-bottom: 10px;;
+      
+   }
+  </style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-slide" id="carousel-slide">
+    <div class="carousel-item" style=" background-image: url(assets/carousel1.png
+        );">
+      <div>
+        <h1>BCCI Invites Appication for Spin Bowling Coach</h1>
+        <p>at Center of Excellence.</p>
+        <div class="underline" ></div>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url(assets/carousel2.png);" >
+      <div>
+        <h1>ICC Champion Trophy 2025</h1>
+        <p>ft. Team India</p>
+        <div class="underline"></div>
+      </div>
+    </div>
+    <div class="carousel-item"style="background-image: url(assets/carousel3.png);" >
+      <div>
+        <h1>IND-W VS SA-W,</h1>
+        <p>ICC U19 Women's T20 World Cup 2025</p>
+        <div class="underline"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+  <div class="carousel-indicators" id="indicators">
+    <span onclick="goToSlide(0)" class="active"></span>
+    <span onclick="goToSlide(1)"></span>
+    <span onclick="goToSlide(2)"></span>
+  </div>
+</div>
+ 
+<div class="container">
+  <div class="box">
+    <video src="assets/video1.mp4" autoplay loop muted></video>
+    <div class="box-content">
+      <h1>ICC Champions Trophy 2025 Winning Moment</h1>
+      <p>ft. Team India</p> 
+    </div>
+  </div>
+  <div class="box">
+    <video src="assets/video2.mp4" autoplay loop muted></video>
+    <div class="box-content">
+      <h1>ICC Champions Trophy 2025 Winning Short</h1>
+      <p>ft. Team India</p>
+    </div>
+  </div>
+  <div class="box">
+    <video src="assets/video3.mp4"></video>
+    <div class="box-content">
+      <h1> Vibe Shreyas Iyer | ICC Champions Trophy 2025</h1>
+      <p>ft. Team India</p>
+    </div>
+  </div>
+  <div class="box">
+    <video src="assets/video4.mp4"></video>
+    <div class="box-content">
+      <h1>Virat Kohli reacts after winning his first ICC trophy</h1>
+      <p>ft. Team India</p>
+    </div>
+  </div>
+  <div class="box">
+    <video src="assets/video5.mp4"></video>
+    <div class="box-content">
+      <h1>M S Dhoni is the master mind caption cool</h1>
+      <p>ft. Team India</p>
+    </div>
+  </div>
+  <div class="box">
+    <video src="assets/video6.mp4" autoplay muted loop></video>
+    <div class="box-content">
+      <h1>Virat Kohli (king) is Masterclass Of RunChase</h1>
+      <p>ft. Team India</p>
+  </div>
+<script>
+  let currentIndex = 0;
+  const slide = document.getElementById('carousel-slide');
+  const indicators = document.getElementById('indicators').children;
+
+  function updateCarousel() {
+    slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    Array.from(indicators).forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function moveSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 2;
+    if (currentIndex > 2) currentIndex = 0;
+    updateCarousel();
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+  setInterval(() => moveSlide(1), 6000);
+
+  
+
+</script>
+
+</body>
+</html>

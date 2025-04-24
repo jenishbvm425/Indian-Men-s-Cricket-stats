@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 1px solid #082677;
+    background-color: #06216b;
+    position: sticky;
+  }
+  
+  .logo {
+    color: white;
+    
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 2.00rem;
+    font-weight: bold;
+  }
+  
+  .logo-box {
+    color: #fff;
+    padding: 0px 12px;
+    font-family: monospace;
+  }
+  
+  .navbar {
+    font-size: 1.20rem;
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    background-color: #fd490d;
+    color: white;
+  }
+  
+  .sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #d4a24c;
+    border-radius: 20px;
+    padding: 30px 10px;
+    background-color: #000;
+  }
+  
+  .sponsor-block {
+    text-align: center;
+    margin: 20px;
+    min-width: 150px;
+  }
+  
+  .sponsor-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d4a24c;
+    margin-bottom: 10px;
+  }
+  
+  .sponsor-block img {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin: 5px;
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .partner-logos img {
+    max-height: 50px;
+  }
+  footer{
+    /* background-image: url('assets/footerbg.png'); */
+  }
+  .footer{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    position: sticky;
+  }
+  .footer2{
+     padding: 16px 32px;
+    position: sticky;
+    color: #fff;
+    text-align: center;
+  }
+  .footerlinkcontent{
+      margin-bottom: auto;
+  }
+  .footerlink{
+    display: flex;
+    gap: 30px;
+    font-size: 1.50rem;
+    font-weight: 600;
+  }
+  .footerlink a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+ 
+  .footer-content {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
