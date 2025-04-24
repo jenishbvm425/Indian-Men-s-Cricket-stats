@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Stats Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Tabs -->
+<div class="rankpage">
+    <div class="rankingmenu">
+        <div class="top-tabs">
+            <button class="tab active" onclick="selectTab(this)"><a href="testranking.html" target="rank">Test</a></button>
+            <button class="tab" onclick="selectTab(this)"><a href="odiranking.html" target="rank">ODI</a></button>
+            <button class="tab" onclick="selectTab(this)"><a href="t20ranking.html" target="rank">T20</a></button>
+          </div>
+          <iframe src="testranking.html" frameborder="0" height="700vh" width="350vw" name="rank" style="margin-left: -2px;"></iframe>
+     </div>
+     <iframe src="" frameborder="0" height="700vh" width="1200vw" name="record"></iframe>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

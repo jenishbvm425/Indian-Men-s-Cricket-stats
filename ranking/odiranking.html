@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Stats Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar Content -->
+  <div class="container">
+    <div class="dropdown-section" id="batting-section">
+      <div class="dropdown-header" onclick="toggleDropdown('batting')">
+        <span class="icon">🖊️</span>
+        <span class="title team"><a href=""> ODI Team Ranking</a></span>
+       
+      </div>
+    </div>
+
+    <div class="dropdown-section" id="bowling-section">
+      <div class="dropdown-header" onclick="toggleDropdown('bowling')">
+        <span class="icon">🎯</span>
+        <span class="title">ODI Player Ranking</span>
+        <span class="arrow" id="arrow-bowling">▶</span>
+      </div>
+      <div class="dropdown-body" id="dropdown-bowling" style="display: none;">
+        <div class="item"><a href="">Batter</a></div>
+        <div class="item"><a href="">Bowler</a></div>
+        <div class="item"><a href="">All-rounder</a></div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
