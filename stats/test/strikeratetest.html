@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Bowlers by Strike Rate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .top-card {
+      background: #1c4587;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .top-card img {
+      border-radius: 10px;
+      margin-right: 20px;
+      width: 120px;
+    }
+
+    .top-card h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .top-card h1 span {
+      font-weight: bold;
+    }
+
+    .top-card table {
+      margin-top: 10px;
+      width: 100%;
+      color: white;
+      font-size: 14px;
+    }
+
+    .top-card table td {
+      padding: 4px 10px;
+      text-align: center;
+    }
+
+    .strike-rate-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #d8f1fd;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .strike-rate-box .value {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .bowlers-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .bowlers-table th, .bowlers-table td {
+      padding: 12px 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .bowlers-table th {
+      background: #1c4587;
+      color: white;
+    }
+
+    .bowlers-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .rank-cell {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1c4587;
+    }
+
+    .name-cell {
+      text-align: left;
+      font-weight: bold;
+      color: #3f3e3e;
+    }
+
+    .subtext {
+      display: block;
+      font-size: 12px;
+      color: #888;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Jasprit Bumrah Top Card -->
+  <div class="top-card">
+    <img src="assets/bumrah.png" alt="Jasprit Bumrah">
+    <div>
+      <h1>#1 <span>Jasprit BUMRAH</span></h1>
+      <table>
+        <tr>
+          <td><strong>Matches</strong><br>45</td>
+          <td><strong>Inns</strong><br>86</td>
+          <td><strong>Wickets</strong><br>205</td>
+          <td><strong>Avg.</strong><br>19.40</td>
+          <td><strong>Bowl. Fig.</strong><br>6/27</td>
+          <td><strong>Economy</strong><br>2.76</td>
+          <td><strong>SR</strong><br>42.00</td>
+          <td><strong>Runs</strong><br>3977</td>
+        </tr>
+      </table>
+    </div>
+    <div class="strike-rate-box">
+      <div class="value">42.00</div>
+      <div>Best Strike Rate</div>
+    </div>
+  </div>
+
+  <!-- Bowlers Table -->
+  <table class="bowlers-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Matches</th>
+        <th>Inns</th>
+        <th>Wickets</th>
+        <th>Avg</th>
+        <th>Bowling Figure</th>
+        <th>Economy Rate</th>
+        <th>SR</th>
+        <th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rank-cell">2</td>
+        <td class="name-cell">Mohammad Shami</td>
+        <td>64</td>
+        <td>122</td>
+        <td>229</td>
+        <td>27.71</td>
+        <td>6/56</td>
+        <td>3.30</td>
+        <td>50.20</td>
+        <td>6346</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">3</td>
+        <td class="name-cell">Ravichandran Ashwin</td>
+        <td>106</td>
+        <td>200</td>
+        <td>537</td>
+        <td>24.00</td>
+        <td>7/59</td>
+        <td>2.83</td>
+        <td>50.70</td>
+        <td>12891</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">4</td>
+        <td class="name-cell">Umesh Yadav</td>
+        <td>57</td>
+        <td>112</td>
+        <td>170</td>
+        <td>30.95</td>
+        <td>6/88</td>
+        <td>3.51</td>
+        <td>52.80</td>
+        <td>5263</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">5</td>
+        <td class="name-cell">Mohammed Siraj</td>
+        <td>36</td>
+        <td>67</td>
+        <td>100</td>
+        <td>30.74</td>
+        <td>6/15</td>
+        <td>3.47</td>
+        <td>53.00</td>
+        <td>3074</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">6</td>
+        <td class="name-cell">Chetan Sharma</td>
+        <td>23</td>
+        <td>39</td>
+        <td>61</td>
+        <td>35.45</td>
+        <td>6/58</td>
+        <td>3.74</td>
+        <td>56.80</td>
+        <td>2163</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">7</td>
+        <td class="name-cell">Ravindra Jadeja</td>
+        <td>80</td>
+        <td>150</td>
+        <td>323</td>
+        <td>24.14</td>
+        <td>7/42</td>
+        <td>2.53</td>
+        <td>57.10</td>
+        <td>7798</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">8</td>
+        <td class="name-cell">Irfan Pathan</td>
+        <td>29</td>
+        <td>54</td>
+        <td>100</td>
+        <td>32.26</td>
+        <td>7/59</td>
+        <td>3.28</td>
+        <td>58.80</td>
+        <td>3226</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">9</td>
+        <td class="name-cell">Zaheer Khan</td>
+        <td>92</td>
+        <td>165</td>
+        <td>311</td>
+        <td>32.94</td>
+        <td>7/87</td>
+        <td>3.27</td>
+        <td>60.40</td>
+        <td>10247</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">10</td>
+        <td class="name-cell">Roger Binny</td>
+        <td>27</td>
+        <td>38</td>
+        <td>47</td>
+        <td>32.63</td>
+        <td>6/56</td>
+        <td>3.20</td>
+        <td>61.00</td>
+        <td>1534</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">11</td>
+        <td class="name-cell">Ishant Sharma</td>
+        <td>105</td>
+        <td>188</td>
+        <td>311</td>
+        <td>32.40</td>
+        <td>7/74</td>
+        <td>3.15</td>
+        <td>61.60</td>
+        <td>10078</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">12</td>
+        <td class="name-cell">Sreesanth</td>
+        <td>27</td>
+        <td>50</td>
+        <td>87</td>
+        <td>37.59</td>
+        <td>5/40</td>
+        <td>3.62</td>
+        <td>62.20</td>
+        <td>3271</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">13</td>
+        <td class="name-cell">Kapil Dev</td>
+        <td>131</td>
+        <td>227</td>
+        <td>434</td>
+        <td>29.64</td>
+        <td>9/83</td>
+        <td>2.78</td>
+        <td>63.90</td>
+        <td>12867</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">14</td>
+        <td class="name-cell">Javagal Srinath</td>
+        <td>67</td>
+        <td>121</td>
+        <td>236</td>
+        <td>30.49</td>
+        <td>8/86</td>
+        <td>2.85</td>
+        <td>64.00</td>
+        <td>7196</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">15</td>
+        <td class="name-cell">Karsan Devjibhai Ghavri</td>
+        <td>39</td>
+        <td>69</td>
+        <td>109</td>
+        <td>33.54</td>
+        <td>5/33</td>
+        <td>3.11</td>
+        <td>64.50</td>
+        <td>3656</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">16</td>
+        <td class="name-cell">Anil Kumble</td>
+        <td>132</td>
+        <td>236</td>
+        <td>619</td>
+        <td>29.65</td>
+        <td>10/74</td>
+        <td>2.69</td>
+        <td>65.90</td>
+        <td>18355</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">17</td>
+        <td class="name-cell">Bhagwath Chandrasekhar</td>
+        <td>58</td>
+        <td>97</td>
+        <td>242</td>
+        <td>29.74</td>
+        <td>8/79</td>
+        <td>2.70</td>
+        <td>65.90</td>
+        <td>7199</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">18</td>
+        <td class="name-cell">Amit Mishra</td>
+        <td>22</td>
+        <td>40</td>
+        <td>76</td>
+        <td>35.72</td>
+        <td>5/71</td>
+        <td>3.19</td>
+        <td>67.10</td>
+        <td>2715</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">19</td>
+        <td class="name-cell">Pragyan Ojha</td>
+        <td>24</td>
+        <td>48</td>
+        <td>113</td>
+        <td>30.26</td>
+        <td>6/47</td>
+        <td>2.68</td>
+        <td>67.50</td>
+        <td>3420</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">20</td>
+        <td class="name-cell">Harbhajan Singh</td>
+        <td>103</td>
+        <td>190</td>
+        <td>417</td>
+        <td>32.46</td>
+        <td>8/84</td>
+        <td>2.84</td>
+        <td>68.50</td>
+        <td>13537</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">21</td>
+        <td class="name-cell">Venkatesh Prasad</td>
+        <td>33</td>
+        <td>58</td>
+        <td>96</td>
+        <td>35.00</td>
+        <td>6/33</td>
+        <td>2.86</td>
+        <td>73.30</td>
+        <td>3360</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">22</td>
+        <td class="name-cell">Ramakant Desai</td>
+        <td>28</td>
+        <td>45</td>
+        <td>74</td>
+        <td>37.31</td>
+        <td>6/56</td>
+        <td>2.95</td>
+        <td>75.60</td>
+        <td>2761</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">23</td>
+        <td class="name-cell">Subhash Gupte</td>
+        <td>36</td>
+        <td>61</td>
+        <td>149</td>
+        <td>29.55</td>
+        <td>9/102</td>
+        <td>2.34</td>
+        <td>75.70</td>
+        <td>4403</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">24</td>
+        <td class="name-cell">Erapalli Prasanna</td>
+        <td>49</td>
+        <td>86</td>
+        <td>189</td>
+        <td>30.38</td>
+        <td>8/76</td>
+        <td>2.40</td>
+        <td>75.90</td>
+        <td>5742</td>
+      </tr>
+      <tr>
+        <td class="rank-cell">25</td>
+        <td class="name-cell">Manoj Prabhakar</td>
+        <td>39</td>
+        <td>68</td>
+        <td>96</td>
+        <td>37.30</td>
+        <td>6/132</td>
+        <td>2.87</td>
+        <td>77.80</td>
+        <td>3581</td>
+      </tr>
+      
+      </tbody>
+
+
+

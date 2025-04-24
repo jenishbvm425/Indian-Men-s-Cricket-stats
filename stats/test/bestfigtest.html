@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bowling Stats</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .stats-container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .top-player {
+      display: flex;
+      align-items: center;
+      background-color: #1e3f77;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .top-player img {
+      border-radius: 50%;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .top-player .info {
+      flex: 1;
+    }
+
+    .top-player .info h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .top-player .info .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #b2f1ec;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #e6f7ff;
+    }
+
+    .rank {
+      font-weight: bold;
+      font-size: 18px;
+      color: #1e3f77;
+    }
+
+    .player-name {
+      color: #1e3f77;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="stats-container">
+
+  <div class="top-player">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Mohammed_Shami.jpg" alt="Mohammad Shami" />
+    <div class="info">
+      <h1>#1 Mohammad Shami</h1>
+      <div class="stats">
+        <span>Matches: 108</span>
+        <span>Inns: 107</span>
+        <span>Wickets: 206</span>
+        <span>Avg: 24.05</span>
+        <span>Best: 7/57</span>
+        <span>Economy: 5.58</span>
+        <span>SR: 25.8</span>
+        <span>Runs: 4955</span>
+      </div>
+    </div>
+    <div class="highlight">7/57<br>Best Bowling Figure</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Matches</th>
+        <th>Inns</th>
+        <th>Wickets</th>
+        <th>Avg</th>
+        <th>Best</th>
+        <th>Economy</th>
+        <th>SR</th>
+        <th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rank">2</td>
+        <td class="player-name">Stuart Binny</td>
+        <td>14</td>
+        <td>12</td>
+        <td>20</td>
+        <td>21.95</td>
+        <td>6/4</td>
+        <td>5.37</td>
+        <td>24.5</td>
+        <td>439</td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="player-name">Anil Kumble</td>
+        <td>271</td>
+        <td>265</td>
+        <td>337</td>
+        <td>30.89</td>
+        <td>6/12</td>
+        <td>4.30</td>
+        <td>43.0</td>
+        <td>10412</td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="player-name">Jasprit Bumrah</td>
+        <td>89</td>
+        <td>88</td>
+        <td>149</td>
+        <td>23.55</td>
+        <td>6/19</td>
+        <td>4.59</td>
+        <td>30.7</td>
+        <td>3509</td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="player-name">Mohammed Siraj</td>
+        <td>44</td>
+        <td>43</td>
+        <td>71</td>
+        <td>24.04</td>
+        <td>6/21</td>
+        <td>5.18</td>
+        <td>27.8</td>
+        <td>1707</td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="player-name">Ashish Nehra</td>
+        <td>120</td>
+        <td>120</td>
+        <td>157</td>
+        <td>31.72</td>
+        <td>6/23</td>
+        <td>5.19</td>
+        <td>36.6</td>
+        <td>4981</td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="player-name">Kuldeep Yadav</td>
+        <td>113</td>
+        <td>110</td>
+        <td>181</td>
+        <td>26.44</td>
+        <td>6/25</td>
+        <td>4.99</td>
+        <td>31.7</td>
+        <td>4786</td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="player-name">Murali Kartik</td>
+        <td>37</td>
+        <td>36</td>
+        <td>37</td>
+        <td>43.56</td>
+        <td>6/27</td>
+        <td>5.07</td>
+        <td>51.5</td>
+        <td>1612</td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="player-name">Ajit Agarkar</td>
+        <td>191</td>
+        <td>188</td>
+        <td>288</td>
+        <td>27.85</td>
+        <td>6/42</td>
+        <td>5.07</td>
+        <td>32.9</td>
+        <td>8021</td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="player-name">Yuzvendra Chahal</td>
+        <td>72</td>
+        <td>69</td>
+        <td>121</td>
+        <td>27.13</td>
+        <td>6/42</td>
+        <td>5.26</td>
+        <td>30.9</td>
+        <td>3283</td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="player-name">Amit Mishra</td>
+        <td>36</td>
+        <td>34</td>
+        <td>64</td>
+        <td>23.60</td>
+        <td>6/48</td>
+        <td>4.72</td>
+        <td>29.9</td>
+        <td>1511</td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="player-name">Sreesanth</td>
+        <td>53</td>
+        <td>52</td>
+        <td>75</td>
+        <td>33.44</td>
+        <td>6/55</td>
+        <td>6.07</td>
+        <td>33.0</td>
+        <td>2508</td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="player-name">Sunil Joshi</td>
+        <td>69</td>
+        <td>67</td>
+        <td>69</td>
+        <td>36.36</td>
+        <td>5/6</td>
+        <td>4.44</td>
+        <td>49.0</td>
+        <td>2509</td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="player-name">Ravi Shastri</td>
+        <td>150</td>
+        <td>136</td>
+        <td>129</td>
+        <td>36.04</td>
+        <td>5/15</td>
+        <td>4.21</td>
+        <td>51.2</td>
+        <td>4650</td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="player-name">Sourav Ganguly</td>
+        <td>311</td>
+        <td>171</td>
+        <td>100</td>
+        <td>38.49</td>
+        <td>5/16</td>
+        <td>5.06</td>
+        <td>45.6</td>
+        <td>3849</td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="player-name">Arshad Ayub</td>
+        <td>32</td>
+        <td>32</td>
+        <td>31</td>
+        <td>39.22</td>
+        <td>5/21</td>
+        <td>4.12</td>
+        <td>57.0</td>
+        <td>1216</td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="player-name">Nikhil Chopra</td>
+        <td>39</td>
+        <td>37</td>
+        <td>46</td>
+        <td>27.95</td>
+        <td>5/21</td>
+        <td>4.20</td>
+        <td>39.8</td>
+        <td>1286</td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="player-name">Javagal Srinath</td>
+        <td>229</td>
+        <td>227</td>
+        <td>315</td>
+        <td>28.08</td>
+        <td>5/23</td>
+        <td>4.44</td>
+        <td>37.8</td>
+        <td>8847</td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="player-name">-</td>
+        <td>23</td>
+        <td>22</td>
+        <td>22</td>
+        <td>36.95</td>
+        <td>5/26</td>
+        <td>4.98</td>
+        <td>44.5</td>
+        <td>813</td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="player-name">Venkatesh Prasad</td>
+        <td>161</td>
+        <td>160</td>
+        <td>196</td>
+        <td>32.30</td>
+        <td>5/27</td>
+        <td>4.67</td>
+        <td>41.4</td>
+        <td>6332</td>
+      </tr>
+      <tr>
+        <td class="rank">21</td>
+        <td class="player-name">Irfan Pathan</td>
+        <td>120</td>
+        <td>118</td>
+        <td>173</td>
+        <td>29.72</td>
+        <td>5/27</td>
+        <td>5.26</td>
+        <td>33.8</td>
+        <td>5142</td>
+      </tr>
+      <tr>
+        <td class="rank">22</td>
+        <td class="player-name">Kris Srikkanth</td>
+        <td>146</td>
+        <td>33</td>
+        <td>25</td>
+        <td>25.64</td>
+        <td>5/27</td>
+        <td>5.40</td>
+        <td>28.4</td>
+        <td>641</td>
+      </tr>
+      <tr>
+        <td class="rank">23</td>
+        <td class="player-name">Harbhajan Singh</td>
+        <td>236</td>
+        <td>227</td>
+        <td>269</td>
+        <td>33.35</td>
+        <td>5/31</td>
+        <td>4.31</td>
+        <td>46.3</td>
+        <td>8973</td>
+      </tr>
+      <tr>
+        <td class="rank">24</td>
+        <td class="player-name">Yuvraj Singh</td>
+        <td>304</td>
+        <td>161</td>
+        <td>111</td>
+        <td>38.68</td>
+        <td>5/31</td>
+        <td>5.10</td>
+        <td>45.4</td>
+        <td>4294</td>
+      </tr>
+      <tr>
+        <td class="rank">25</td>
+        <td class="player-name">Sachin Tendulkar</td>
+        <td>463</td>
+        <td>270</td>
+        <td>154</td>
+        <td>44.48</td>
+        <td>5/32</td>
+        <td>5.10</td>
+        <td>52.2</td>
+        <td>6850</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>

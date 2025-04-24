@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Most Fours - Indian Batsmen</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.top-player-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #215b9d;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.top-player-card .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.top-player-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.top-player-card h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.top-player-card h1 span {
+  font-weight: normal;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.stats span {
+  font-size: 14px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.badge {
+  background: #c3f0ff;
+  color: #003b5c;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.badge div {
+  font-size: 28px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: #056eab;
+  color: white;
+}
+
+th, td {
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+td:first-child {
+  font-weight: bold;
+  color: #215b9d;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Top Player Card -->
+    <div class="top-player-card">
+      <div class="left-section">
+        <img src="rahul.png" alt="Rahul Dravid">
+        <div class="top-text">
+          <h1>#1 <span>Rahul</span> DRAVID</h1>
+          <div class="stats">
+            <span>Matches<br>164</span>
+            <span>Inns<br>286</span>
+            <span>Avg.<br>52.31</span>
+            <span>SR<br>42.51</span>
+            <span>HS<br>270</span>
+            <span>4’s<br>1655</span>
+            <span>6’s<br>21</span>
+            <span>50’s<br>63</span>
+            <span>100’s<br>36</span>
+            <span>Runs<br>13288</span>
+          </div>
+        </div>
+      </div>
+      <div class="badge">
+        <div>1655</div>
+        <small>Most Fours</small>
+      </div>
+    </div>
+
+    <!-- Table Section -->
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Matches</th>
+          <th>Inns</th>
+          <th>Avg</th>
+          <th>SR</th>
+          <th>HS</th>
+          <th>4’s</th>
+          <th>6’s</th>
+          <th>50’s</th>
+          <th>100’s</th>
+          <th>Runs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>Virender Sehwag</td>
+          <td>104</td>
+          <td>180</td>
+          <td>49.34</td>
+          <td>82.23</td>
+          <td>319</td>
+          <td>1233</td>
+          <td>91</td>
+          <td>32</td>
+          <td>23</td>
+          <td>8586</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>VVS Laxman</td>
+          <td>134</td>
+          <td>225</td>
+          <td>45.97</td>
+          <td>49.37</td>
+          <td>281</td>
+          <td>1135</td>
+          <td>5</td>
+          <td>56</td>
+          <td>17</td>
+          <td>8781</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Virat Kohli</td>
+          <td>123</td>
+          <td>210</td>
+          <td>46.85</td>
+          <td>55.57</td>
+          <td>254</td>
+          <td>1027</td>
+          <td>30</td>
+          <td>31</td>
+          <td>30</td>
+          <td>9230</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Sunil Gavaskar</td>
+          <td>125</td>
+          <td>214</td>
+          <td>51.12</td>
+          <td>66.04</td>
+          <td>236</td>
+          <td>1016</td>
+          <td>26</td>
+          <td>45</td>
+          <td>34</td>
+          <td>10122</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Sourav Ganguly</td>
+            <td>113</td>
+            <td>188</td>
+            <td>42.17</td>
+            <td>51.25</td>
+            <td>239</td>
+            <td>900</td>
+            <td>57</td>
+            <td>35</td>
+            <td>16</td>
+            <td>7212</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Cheteshwar Pujara</td>
+            <td>103</td>
+            <td>176</td>
+            <td>43.60</td>
+            <td>44.36</td>
+            <td>206</td>
+            <td>863</td>
+            <td>16</td>
+            <td>35</td>
+            <td>19</td>
+            <td>7195</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Mohammad Azharuddin</td>
+            <td>99</td>
+            <td>147</td>
+            <td>45.03</td>
+            <td>63.08</td>
+            <td>199</td>
+            <td>720</td>
+            <td>19</td>
+            <td>21</td>
+            <td>22</td>
+            <td>6215</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Gundappa Viswanath</td>
+            <td>91</td>
+            <td>155</td>
+            <td>41.93</td>
+            <td>75.90</td>
+            <td>222</td>
+            <td>616</td>
+            <td>6</td>
+            <td>35</td>
+            <td>14</td>
+            <td>6080</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Kapil Dev</td>
+            <td>131</td>
+            <td>184</td>
+            <td>31.05</td>
+            <td>94.76</td>
+            <td>163</td>
+            <td>587</td>
+            <td>61</td>
+            <td>27</td>
+            <td>8</td>
+            <td>5248</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Ajinkya Rahane</td>
+            <td>85</td>
+            <td>144</td>
+            <td>38.46</td>
+            <td>49.50</td>
+            <td>188</td>
+            <td>578</td>
+            <td>35</td>
+            <td>26</td>
+            <td>12</td>
+            <td>5077</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Dilip Vengsarkar</td>
+            <td>116</td>
+            <td>185</td>
+            <td>41.37</td>
+            <td>59.98</td>
+            <td>166</td>
+            <td>560</td>
+            <td>17</td>
+            <td>35</td>
+            <td>17</td>
+            <td>6868</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>MS Dhoni</td>
+            <td>90</td>
+            <td>144</td>
+            <td>38.09</td>
+            <td>59.11</td>
+            <td>224</td>
+            <td>544</td>
+            <td>78</td>
+            <td>33</td>
+            <td>6</td>
+            <td>4876</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Gautam Gambhir</td>
+            <td>58</td>
+            <td>104</td>
+            <td>41.95</td>
+            <td>51.49</td>
+            <td>206</td>
+            <td>517</td>
+            <td>10</td>
+            <td>22</td>
+            <td>9</td>
+            <td>4154</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Rohit Sharma</td>
+            <td>67</td>
+            <td>116</td>
+            <td>40.57</td>
+            <td>57.05</td>
+            <td>212</td>
+            <td>473</td>
+            <td>88</td>
+            <td>18</td>
+            <td>12</td>
+            <td>4301</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Murali Vijay</td>
+            <td>61</td>
+            <td>105</td>
+            <td>38.28</td>
+            <td>46.29</td>
+            <td>167</td>
+            <td>467</td>
+            <td>33</td>
+            <td>15</td>
+            <td>12</td>
+            <td>3982</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Ravichandran Ashwin</td>
+            <td>106</td>
+            <td>151</td>
+            <td>25.75</td>
+            <td>54.53</td>
+            <td>124</td>
+            <td>399</td>
+            <td>23</td>
+            <td>14</td>
+            <td>6</td>
+            <td>3503</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>KL Rahul</td>
+            <td>58</td>
+            <td>101</td>
+            <td>33.57</td>
+            <td>52.80</td>
+            <td>199</td>
+            <td>387</td>
+            <td>26</td>
+            <td>17</td>
+            <td>8</td>
+            <td>3257</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Navjot Sidhu</td>
+            <td>51</td>
+            <td>78</td>
+            <td>42.13</td>
+            <td>44.88</td>
+            <td>201</td>
+            <td>358</td>
+            <td>38</td>
+            <td>15</td>
+            <td>9</td>
+            <td>3202</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Mohinder Amarnath</td>
+            <td>69</td>
+            <td>113</td>
+            <td>42.50</td>
+            <td>85.52</td>
+            <td>138</td>
+            <td>330</td>
+            <td>21</td>
+            <td>24</td>
+            <td>11</td>
+            <td>4378</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Ravindra Jadeja</td>
+            <td>80</td>
+            <td>118</td>
+            <td>34.74</td>
+            <td>55.24</td>
+            <td>175</td>
+            <td>330</td>
+            <td>69</td>
+            <td>22</td>
+            <td>4</td>
+            <td>3370</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Rishabh Pant</td>
+            <td>43</td>
+            <td>75</td>
+            <td>42.11</td>
+            <td>73.62</td>
+            <td>159</td>
+            <td>320</td>
+            <td>73</td>
+            <td>15</td>
+            <td>6</td>
+            <td>2948</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Ravi Shastri</td>
+            <td>80</td>
+            <td>121</td>
+            <td>35.79</td>
+            <td>48.22</td>
+            <td>206</td>
+            <td>317</td>
+            <td>22</td>
+            <td>12</td>
+            <td>11</td>
+            <td>3830</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Shikhar Dhawan</td>
+            <td>34</td>
+            <td>58</td>
+            <td>40.61</td>
+            <td>66.94</td>
+            <td>190</td>
+            <td>316</td>
+            <td>12</td>
+            <td>5</td>
+            <td>7</td>
+            <td>2315</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Anil Kumble</td>
+            <td>132</td>
+            <td>173</td>
+            <td>17.65</td>
+            <td>38.82</td>
+            <td>110</td>
+            <td>302</td>
+            <td>9</td>
+            <td>5</td>
+            <td>1</td>
+            <td>2506</td>
+          </tr>
+    
+        </tbody>
+      </table>
+  
+    </div>
+  </body>
+  </html>

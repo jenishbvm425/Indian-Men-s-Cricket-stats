@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Test Cricketers</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+.highlight-card {
+  display: flex;
+  background-color: #2c5a9b;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.highlight-image img {
+  height: 160px;
+  border-radius: 0 0 30px 0;
+}
+
+.highlight-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.highlight-info h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.highlight-info span {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stats div {
+  text-align: center;
+  min-width: 70px;
+}
+
+.stats strong {
+  font-size: 18px;
+}
+
+.highlight-badge {
+  background: #c8f4fd;
+  color: #1a3a57;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.highlight-badge span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+td span {
+  font-size: 11px;
+  color: #888;
+}
+
+td.rank {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2a4a90;
+}
+
+  </style>
+</head>
+<body>
+  <div class="highlight-card">
+    <div class="highlight-image">
+      <img src="sachin.png" alt="Sachin Tendulkar">
+    </div>
+    <div class="highlight-info">
+      <h1>#1 Sachin <strong>TENDULKAR</strong></h1>
+      <div class="stats">
+        <div><strong>200</strong><br>Matches</div>
+        <div><strong>329</strong><br>Inns</div>
+        <div><strong>53.78</strong><br>Avg</div>
+        <div><strong>54.08</strong><br>SR</div>
+        <div><strong>248</strong><br>HS</div>
+        <div><strong>0</strong><br>4’s</div>
+        <div><strong>69</strong><br>6’s</div>
+        <div><strong>68</strong><br>50’s</div>
+        <div><strong>51</strong><br>100’s</div>
+        <div><strong>15921</strong><br>Runs</div>
+      </div>
+    </div>
+    <div class="highlight-badge">
+      <strong>53.78</strong><br><span>Highest Average</span>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <tbody>
+        <tr>
+          <td class="rank">2</td>
+          <td>Rahul Dravid</td>
+          <td>164<br><span>Matches</span></td>
+          <td>286<br><span>Inns</span></td>
+          <td>52.31<br><span>Avg</span></td>
+          <td>42.51<br><span>SR</span></td>
+          <td>270<br><span>HS</span></td>
+          <td>1655<br><span>4’s</span></td>
+          <td>21<br><span>6’s</span></td>
+          <td>63<br><span>50’s</span></td>
+          <td>36<br><span>100’s</span></td>
+          <td>13288<br><span>Runs</span></td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td>Sunil Gavaskar</td>
+          <td>125<br><span>Matches</span></td>
+          <td>214<br><span>Inns</span></td>
+          <td>51.12<br><span>Avg</span></td>
+          <td>66.04<br><span>SR</span></td>
+          <td>236<br><span>HS</span></td>
+          <td>1016<br><span>4’s</span></td>
+          <td>26<br><span>6’s</span></td>
+          <td>45<br><span>50’s</span></td>
+          <td>34<br><span>100’s</span></td>
+          <td>10122<br><span>Runs</span></td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td>Virender Sehwag</td>
+          <td>104<br><span>Matches</span></td>
+          <td>180<br><span>Inns</span></td>
+          <td>49.34<br><span>Avg</span></td>
+          <td>82.23<br><span>SR</span></td>
+          <td>319<br><span>HS</span></td>
+          <td>1233<br><span>4’s</span></td>
+          <td>91<br><span>6’s</span></td>
+          <td>32<br><span>50’s</span></td>
+          <td>23<br><span>100’s</span></td>
+          <td>8586<br><span>Runs</span></td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td>Virat Kohli</td>
+          <td>123<br><span>Matches</span></td>
+          <td>210<br><span>Inns</span></td>
+          <td>46.85<br><span>Avg</span></td>
+          <td>55.57<br><span>SR</span></td>
+          <td>254<br><span>HS</span></td>
+          <td>1027<br><span>4’s</span></td>
+          <td>30<br><span>6’s</span></td>
+          <td>31<br><span>50’s</span></td>
+          <td>30<br><span>100’s</span></td>
+          <td>9230<br><span>Runs</span></td>
+        </tr>
+        <tr>
+            <td class="rank">6</td>
+            <td>VVS Laxman</td>
+            <td>134<br><span>Matches</span></td>
+            <td>225<br><span>Inns</span></td>
+            <td>45.97<br><span>Avg</span></td>
+            <td>49.37<br><span>SR</span></td>
+            <td>281<br><span>HS</span></td>
+            <td>1135<br><span>4’s</span></td>
+            <td>5<br><span>6’s</span></td>
+            <td>56<br><span>50’s</span></td>
+            <td>17<br><span>100’s</span></td>
+            <td>8781<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">7</td>
+            <td>Mohammad Azharuddin</td>
+            <td>99<br><span>Matches</span></td>
+            <td>147<br><span>Inns</span></td>
+            <td>45.03<br><span>Avg</span></td>
+            <td>63.08<br><span>SR</span></td>
+            <td>199<br><span>HS</span></td>
+            <td>720<br><span>4’s</span></td>
+            <td>19<br><span>6’s</span></td>
+            <td>21<br><span>50’s</span></td>
+            <td>22<br><span>100’s</span></td>
+            <td>6215<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">8</td>
+            <td>Cheteshwar Pujara</td>
+            <td>103<br><span>Matches</span></td>
+            <td>176<br><span>Inns</span></td>
+            <td>43.60<br><span>Avg</span></td>
+            <td>44.36<br><span>SR</span></td>
+            <td>206<br><span>HS</span></td>
+            <td>863<br><span>4’s</span></td>
+            <td>16<br><span>6’s</span></td>
+            <td>35<br><span>50’s</span></td>
+            <td>19<br><span>100’s</span></td>
+            <td>7195<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">9</td>
+            <td>Mohinder Amarnath</td>
+            <td>69<br><span>Matches</span></td>
+            <td>113<br><span>Inns</span></td>
+            <td>42.50<br><span>Avg</span></td>
+            <td>85.52<br><span>SR</span></td>
+            <td>138<br><span>HS</span></td>
+            <td>330<br><span>4’s</span></td>
+            <td>21<br><span>6’s</span></td>
+            <td>24<br><span>50’s</span></td>
+            <td>11<br><span>100’s</span></td>
+            <td>4378<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">10</td>
+            <td>Sourav Ganguly</td>
+            <td>113<br><span>Matches</span></td>
+            <td>188<br><span>Inns</span></td>
+            <td>42.17<br><span>Avg</span></td>
+            <td>51.25<br><span>SR</span></td>
+            <td>239<br><span>HS</span></td>
+            <td>900<br><span>4’s</span></td>
+            <td>57<br><span>6’s</span></td>
+            <td>35<br><span>50’s</span></td>
+            <td>16<br><span>100’s</span></td>
+            <td>7212<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">11</td>
+            <td>Navjot Sidhu</td>
+            <td>51<br><span>Matches</span></td>
+            <td>78<br><span>Inns</span></td>
+            <td>42.13<br><span>Avg</span></td>
+            <td>44.88<br><span>SR</span></td>
+            <td>201<br><span>HS</span></td>
+            <td>358<br><span>4’s</span></td>
+            <td>38<br><span>6’s</span></td>
+            <td>15<br><span>50’s</span></td>
+            <td>9<br><span>100’s</span></td>
+            <td>3202<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">12</td>
+            <td>Rishabh Pant</td>
+            <td>43<br><span>Matches</span></td>
+            <td>75<br><span>Inns</span></td>
+            <td>42.11<br><span>Avg</span></td>
+            <td>73.62<br><span>SR</span></td>
+            <td>159<br><span>HS</span></td>
+            <td>320<br><span>4’s</span></td>
+            <td>73<br><span>6’s</span></td>
+            <td>15<br><span>50’s</span></td>
+            <td>6<br><span>100’s</span></td>
+            <td>2948<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">13</td>
+            <td>Gautam Gambhir</td>
+            <td>58<br><span>Matches</span></td>
+            <td>104<br><span>Inns</span></td>
+            <td>41.95<br><span>Avg</span></td>
+            <td>51.49<br><span>SR</span></td>
+            <td>206<br><span>HS</span></td>
+            <td>517<br><span>4’s</span></td>
+            <td>10<br><span>6’s</span></td>
+            <td>22<br><span>50’s</span></td>
+            <td>9<br><span>100’s</span></td>
+            <td>4154<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">14</td>
+            <td>Gundappa Viswanath</td>
+            <td>91<br><span>Matches</span></td>
+            <td>155<br><span>Inns</span></td>
+            <td>41.93<br><span>Avg</span></td>
+            <td>75.9<br><span>SR</span></td>
+            <td>222<br><span>HS</span></td>
+            <td>616<br><span>4’s</span></td>
+            <td>6<br><span>6’s</span></td>
+            <td>35<br><span>50’s</span></td>
+            <td>14<br><span>100’s</span></td>
+            <td>6080<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">15</td>
+            <td>Dilip Vengsarkar</td>
+            <td>116<br><span>Matches</span></td>
+            <td>185<br><span>Inns</span></td>
+            <td>41.37<br><span>Avg</span></td>
+            <td>59.98<br><span>SR</span></td>
+            <td>166<br><span>HS</span></td>
+            <td>560<br><span>4’s</span></td>
+            <td>17<br><span>6’s</span></td>
+            <td>35<br><span>50’s</span></td>
+            <td>17<br><span>100’s</span></td>
+            <td>6868<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">16</td>
+            <td>Shikhar Dhawan</td>
+            <td>34<br><span>Matches</span></td>
+            <td>58<br><span>Inns</span></td>
+            <td>40.61<br><span>Avg</span></td>
+            <td>66.94<br><span>SR</span></td>
+            <td>190<br><span>HS</span></td>
+            <td>316<br><span>4’s</span></td>
+            <td>12<br><span>6’s</span></td>
+            <td>5<br><span>50’s</span></td>
+            <td>7<br><span>100’s</span></td>
+            <td>2315<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">17</td>
+            <td>Rohit Sharma</td>
+            <td>67<br><span>Matches</span></td>
+            <td>116<br><span>Inns</span></td>
+            <td>40.57<br><span>Avg</span></td>
+            <td>57.05<br><span>SR</span></td>
+            <td>212<br><span>HS</span></td>
+            <td>473<br><span>4’s</span></td>
+            <td>88<br><span>6’s</span></td>
+            <td>18<br><span>50’s</span></td>
+            <td>12<br><span>100’s</span></td>
+            <td>4301<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">18</td>
+            <td>Ajinkya Rahane</td>
+            <td>85<br><span>Matches</span></td>
+            <td>144<br><span>Inns</span></td>
+            <td>38.46<br><span>Avg</span></td>
+            <td>49.50<br><span>SR</span></td>
+            <td>188<br><span>HS</span></td>
+            <td>578<br><span>4’s</span></td>
+            <td>35<br><span>6’s</span></td>
+            <td>26<br><span>50’s</span></td>
+            <td>12<br><span>100’s</span></td>
+            <td>5077<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">19</td>
+            <td>Murali Vijay</td>
+            <td>61<br><span>Matches</span></td>
+            <td>105<br><span>Inns</span></td>
+            <td>38.28<br><span>Avg</span></td>
+            <td>46.29<br><span>SR</span></td>
+            <td>167<br><span>HS</span></td>
+            <td>467<br><span>4’s</span></td>
+            <td>33<br><span>6’s</span></td>
+            <td>15<br><span>50’s</span></td>
+            <td>12<br><span>100’s</span></td>
+            <td>3982<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">20</td>
+            <td>MS Dhoni</td>
+            <td>90<br><span>Matches</span></td>
+            <td>144<br><span>Inns</span></td>
+            <td>38.09<br><span>Avg</span></td>
+            <td>59.11<br><span>SR</span></td>
+            <td>224<br><span>HS</span></td>
+            <td>544<br><span>4’s</span></td>
+            <td>78<br><span>6’s</span></td>
+            <td>33<br><span>50’s</span></td>
+            <td>6<br><span>100’s</span></td>
+            <td>4876<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">21</td>
+            <td>Sanjay Manjrekar</td>
+            <td>37<br><span>Matches</span></td>
+            <td>61<br><span>Inns</span></td>
+            <td>37.14<br><span>Avg</span></td>
+            <td>38.67<br><span>SR</span></td>
+            <td>218<br><span>HS</span></td>
+            <td>220<br><span>4’s</span></td>
+            <td>1<br><span>6’s</span></td>
+            <td>9<br><span>50’s</span></td>
+            <td>4<br><span>100’s</span></td>
+            <td>2043<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">22</td>
+            <td>Sandeep Patil</td>
+            <td>29<br><span>Matches</span></td>
+            <td>47<br><span>Inns</span></td>
+            <td>36.09<br><span>Avg</span></td>
+            <td>75.51<br><span>SR</span></td>
+            <td>174<br><span>HS</span></td>
+            <td>197<br><span>4’s</span></td>
+            <td>9<br><span>6’s</span></td>
+            <td>7<br><span>50’s</span></td>
+            <td>4<br><span>100’s</span></td>
+            <td>1588<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">23</td>
+            <td>Ravi Shastri</td>
+            <td>80<br><span>Matches</span></td>
+            <td>121<br><span>Inns</span></td>
+            <td>35.79<br><span>Avg</span></td>
+            <td>48.22<br><span>SR</span></td>
+            <td>206<br><span>HS</span></td>
+            <td>317<br><span>4’s</span></td>
+            <td>22<br><span>6’s</span></td>
+            <td>12<br><span>50’s</span></td>
+            <td>11<br><span>100’s</span></td>
+            <td>3830<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">24</td>
+            <td>Shubman Gill</td>
+            <td>32<br><span>Matches</span></td>
+            <td>59<br><span>Inns</span></td>
+            <td>35.05<br><span>Avg</span></td>
+            <td>59.92<br><span>SR</span></td>
+            <td>128<br><span>HS</span></td>
+            <td>210<br><span>4’s</span></td>
+            <td>31<br><span>6’s</span></td>
+            <td>7<br><span>50’s</span></td>
+            <td>5<br><span>100’s</span></td>
+            <td>1893<br><span>Runs</span></td>
+          </tr>
+          <tr>
+            <td class="rank">25</td>
+            <td>Shiv Sunder Das</td>
+            <td>23<br><span>Matches</span></td>
+            <td>40<br><span>Inns</span></td>
+            <td>34.89<br><span>Avg</span></td>
+            <td>38.92<br><span>SR</span></td>
+            <td>110<br><span>HS</span></td>
+            <td>180<br><span>4’s</span></td>
+            <td>1<br><span>6’s</span></td>
+            <td>9<br><span>50’s</span></td>
+            <td>2<br><span>100’s</span></td>
+            <td>1326<br><span>Runs</span></td>
+          </tr>
+          
+          
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

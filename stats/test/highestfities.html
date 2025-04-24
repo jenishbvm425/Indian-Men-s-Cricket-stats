@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket Leaderboard</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.header-card {
+  display: flex;
+  background-color: #204d8c;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image img {
+  height: 160px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.details {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.details h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.details h1 span {
+  font-weight: 300;
+}
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.stats-row div {
+  min-width: 70px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.badge {
+  background: #def5f4;
+  color: #111;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 15px 15px 0 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.badge span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Player Table */
+.player-table {
+  margin-top: 40px;
+}
+
+.player-row {
+  display: grid;
+  grid-template-columns: 50px 160px repeat(10, 1fr);
+  gap: 10px;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.player-row .rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #204d8c;
+}
+
+.player-row .name {
+  font-weight: 600;
+  color: #204d8c;
+}
+
+.player-row div {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.player-row small {
+  display: block;
+  font-size: 0.7rem;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header Card -->
+    <div class="header-card">
+      <div class="image">
+        <img src="sachin.png" alt="Sachin Tendulkar">
+      </div>
+      <div class="details">
+        <h1>#1 <span>Sachin</span> TENDULKAR</h1>
+        <div class="stats-row">
+          <div><strong>200</strong><br>Matches</div>
+          <div><strong>329</strong><br>Inns</div>
+          <div><strong>53.78</strong><br>Avg</div>
+          <div><strong>--</strong><br>SR</div>
+          <div><strong>248</strong><br>HS</div>
+          <div><strong>0</strong><br>4’s</div>
+          <div><strong>69</strong><br>6’s</div>
+          <div><strong>68</strong><br>50’s</div>
+          <div><strong>51</strong><br>100’s</div>
+          <div><strong>15921</strong><br>Runs</div>
+        </div>
+      </div>
+      <div class="badge">68<br><span>Most Fifties</span></div>
+    </div>
+
+    <!-- Player Table -->
+    <div class="player-table">
+      <div class="player-row">
+        <div class="rank">2</div>
+        <div class="name">Rahul Dravid</div>
+        <div>164<br><small>Matches</small></div>
+        <div>286<br><small>Inns</small></div>
+        <div>52.31<br><small>Avg</small></div>
+        <div>42.51<br><small>SR</small></div>
+        <div>270<br><small>HS</small></div>
+        <div>1655<br><small>4’s</small></div>
+        <div>21<br><small>6’s</small></div>
+        <div>63<br><small>50’s</small></div>
+        <div>36<br><small>100’s</small></div>
+        <div>13288<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">3</div>
+        <div class="name">VVS Laxman</div>
+        <div>134<br><small>Matches</small></div>
+        <div>225<br><small>Inns</small></div>
+        <div>45.97<br><small>Avg</small></div>
+        <div>49.37<br><small>SR</small></div>
+        <div>281<br><small>HS</small></div>
+        <div>1135<br><small>4’s</small></div>
+        <div>5<br><small>6’s</small></div>
+        <div>56<br><small>50’s</small></div>
+        <div>17<br><small>100’s</small></div>
+        <div>8781<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">4</div>
+        <div class="name">Sunil Gavaskar</div>
+        <div>125<br><small>Matches</small></div>
+        <div>214<br><small>Inns</small></div>
+        <div>51.12<br><small>Avg</small></div>
+        <div>66.04<br><small>SR</small></div>
+        <div>236<br><small>HS</small></div>
+        <div>1016<br><small>4’s</small></div>
+        <div>26<br><small>6’s</small></div>
+        <div>45<br><small>50’s</small></div>
+        <div>34<br><small>100’s</small></div>
+        <div>10122<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">5</div>
+        <div class="name">Gundappa Viswanath</div>
+        <div>91<br><small>Matches</small></div>
+        <div>155<br><small>Inns</small></div>
+        <div>41.93<br><small>Avg</small></div>
+        <div>75.90<br><small>SR</small></div>
+        <div>222<br><small>HS</small></div>
+        <div>616<br><small>4’s</small></div>
+        <div>6<br><small>6’s</small></div>
+        <div>35<br><small>50’s</small></div>
+        <div>14<br><small>100’s</small></div>
+        <div>6080<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">6</div>
+        <div class="name">Cheteshwar Pujara</div>
+        <div>103<br><small>Matches</small></div>
+        <div>176<br><small>Inns</small></div>
+        <div>43.60<br><small>Avg</small></div>
+        <div>44.36<br><small>SR</small></div>
+        <div>206<br><small>HS</small></div>
+        <div>863<br><small>4’s</small></div>
+        <div>16<br><small>6’s</small></div>
+        <div>35<br><small>50’s</small></div>
+        <div>19<br><small>100’s</small></div>
+        <div>7195<br><small>Runs</small></div>
+      </div>
+      <div class="player-row">
+        <div class="rank">7</div>
+        <div class="name">Sourav Ganguly</div>
+        <div>113<br><small>Matches</small></div>
+        <div>188<br><small>Inns</small></div>
+        <div>42.17<br><small>Avg</small></div>
+        <div>51.25<br><small>SR</small></div>
+        <div>239<br><small>HS</small></div>
+        <div>900<br><small>4’s</small></div>
+        <div>57<br><small>6’s</small></div>
+        <div>35<br><small>50’s</small></div>
+        <div>16<br><small>100’s</small></div>
+        <div>7212<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">8</div>
+        <div class="name">Dilip Vengsarkar</div>
+        <div>116<br><small>Matches</small></div>
+        <div>185<br><small>Inns</small></div>
+        <div>41.37<br><small>Avg</small></div>
+        <div>59.98<br><small>SR</small></div>
+        <div>166<br><small>HS</small></div>
+        <div>560<br><small>4’s</small></div>
+        <div>17<br><small>6’s</small></div>
+        <div>35<br><small>50’s</small></div>
+        <div>17<br><small>100’s</small></div>
+        <div>6868<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">9</div>
+        <div class="name">MS Dhoni</div>
+        <div>90<br><small>Matches</small></div>
+        <div>144<br><small>Inns</small></div>
+        <div>38.09<br><small>Avg</small></div>
+        <div>59.11<br><small>SR</small></div>
+        <div>224<br><small>HS</small></div>
+        <div>544<br><small>4’s</small></div>
+        <div>78<br><small>6’s</small></div>
+        <div>33<br><small>50’s</small></div>
+        <div>6<br><small>100’s</small></div>
+        <div>4876<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">10</div>
+        <div class="name">Virender Sehwag</div>
+        <div>104<br><small>Matches</small></div>
+        <div>180<br><small>Inns</small></div>
+        <div>49.34<br><small>Avg</small></div>
+        <div>82.23<br><small>SR</small></div>
+        <div>319<br><small>HS</small></div>
+        <div>1233<br><small>4’s</small></div>
+        <div>91<br><small>6’s</small></div>
+        <div>32<br><small>50’s</small></div>
+        <div>23<br><small>100’s</small></div>
+        <div>8586<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">11</div>
+        <div class="name">Virat Kohli</div>
+        <div>123<br><small>Matches</small></div>
+        <div>210<br><small>Inns</small></div>
+        <div>46.85<br><small>Avg</small></div>
+        <div>55.57<br><small>SR</small></div>
+        <div>254<br><small>HS</small></div>
+        <div>1027<br><small>4’s</small></div>
+        <div>30<br><small>6’s</small></div>
+        <div>31<br><small>50’s</small></div>
+        <div>30<br><small>100’s</small></div>
+        <div>9230<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">12</div>
+        <div class="name">Kapil Dev</div>
+        <div>131<br><small>Matches</small></div>
+        <div>184<br><small>Inns</small></div>
+        <div>31.05<br><small>Avg</small></div>
+        <div>94.76<br><small>SR</small></div>
+        <div>163<br><small>HS</small></div>
+        <div>587<br><small>4’s</small></div>
+        <div>61<br><small>6’s</small></div>
+        <div>27<br><small>50’s</small></div>
+        <div>8<br><small>100’s</small></div>
+        <div>5248<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">13</div>
+        <div class="name">Ajinkya Rahane</div>
+        <div>85<br><small>Matches</small></div>
+        <div>144<br><small>Inns</small></div>
+        <div>38.46<br><small>Avg</small></div>
+        <div>49.50<br><small>SR</small></div>
+        <div>188<br><small>HS</small></div>
+        <div>578<br><small>4’s</small></div>
+        <div>35<br><small>6’s</small></div>
+        <div>26<br><small>50’s</small></div>
+        <div>12<br><small>100’s</small></div>
+        <div>5077<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">14</div>
+        <div class="name">Mohinder Amarnath</div>
+        <div>69<br><small>Matches</small></div>
+        <div>113<br><small>Inns</small></div>
+        <div>42.50<br><small>Avg</small></div>
+        <div>85.52<br><small>SR</small></div>
+        <div>138<br><small>HS</small></div>
+        <div>330<br><small>4’s</small></div>
+        <div>21<br><small>6’s</small></div>
+        <div>24<br><small>50’s</small></div>
+        <div>11<br><small>100’s</small></div>
+        <div>4378<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">15</div>
+        <div class="name">Gautam Gambhir</div>
+        <div>58<br><small>Matches</small></div>
+        <div>104<br><small>Inns</small></div>
+        <div>41.95<br><small>Avg</small></div>
+        <div>51.49<br><small>SR</small></div>
+        <div>206<br><small>HS</small></div>
+        <div>517<br><small>4’s</small></div>
+        <div>10<br><small>6’s</small></div>
+        <div>22<br><small>50’s</small></div>
+        <div>9<br><small>100’s</small></div>
+        <div>4154<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">16</div>
+        <div class="name">Ravindra Jadeja</div>
+        <div>80<br><small>Matches</small></div>
+        <div>118<br><small>Inns</small></div>
+        <div>34.74<br><small>Avg</small></div>
+        <div>55.24<br><small>SR</small></div>
+        <div>175<br><small>HS</small></div>
+        <div>330<br><small>4’s</small></div>
+        <div>69<br><small>6’s</small></div>
+        <div>22<br><small>50’s</small></div>
+        <div>4<br><small>100’s</small></div>
+        <div>3370<br><small>Runs</small></div>
+      </div>
+      <div class="player-row">
+        <div class="rank">17</div>
+        <div class="name">Mohammad Azharuddin</div>
+        <div>99<br><small>Matches</small></div>
+        <div>147<br><small>Inns</small></div>
+        <div>45.03<br><small>Avg</small></div>
+        <div>63.08<br><small>SR</small></div>
+        <div>199<br><small>HS</small></div>
+        <div>720<br><small>4’s</small></div>
+        <div>19<br><small>6’s</small></div>
+        <div>21<br><small>50’s</small></div>
+        <div>22<br><small>100’s</small></div>
+        <div>6215<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">18</div>
+        <div class="name">Rohit Sharma</div>
+        <div>67<br><small>Matches</small></div>
+        <div>116<br><small>Inns</small></div>
+        <div>40.57<br><small>Avg</small></div>
+        <div>57.05<br><small>SR</small></div>
+        <div>212<br><small>HS</small></div>
+        <div>473<br><small>4’s</small></div>
+        <div>88<br><small>6’s</small></div>
+        <div>18<br><small>50’s</small></div>
+        <div>12<br><small>100’s</small></div>
+        <div>4301<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">19</div>
+        <div class="name">KL Rahul</div>
+        <div>58<br><small>Matches</small></div>
+        <div>101<br><small>Inns</small></div>
+        <div>33.57<br><small>Avg</small></div>
+        <div>52.80<br><small>SR</small></div>
+        <div>199<br><small>HS</small></div>
+        <div>387<br><small>4’s</small></div>
+        <div>26<br><small>6’s</small></div>
+        <div>17<br><small>50’s</small></div>
+        <div>8<br><small>100’s</small></div>
+        <div>3257<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">20</div>
+        <div class="name">Chetan Chauhan</div>
+        <div>40<br><small>Matches</small></div>
+        <div>68<br><small>Inns</small></div>
+        <div>31.57<br><small>Avg</small></div>
+        <div>54.00<br><small>SR</small></div>
+        <div>97<br><small>HS</small></div>
+        <div>20<br><small>4’s</small></div>
+        <div>1<br><small>6’s</small></div>
+        <div>16<br><small>50’s</small></div>
+        <div>–<br><small>100’s</small></div>
+        <div>2084<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">21</div>
+        <div class="name">Farokh Maneksha Engineer</div>
+        <div>46<br><small>Matches</small></div>
+        <div>87<br><small>Inns</small></div>
+        <div>31.08<br><small>Avg</small></div>
+        <div>137.35<br><small>SR</small></div>
+        <div>121<br><small>HS</small></div>
+        <div>288<br><small>4’s</small></div>
+        <div>2<br><small>6’s</small></div>
+        <div>16<br><small>50’s</small></div>
+        <div>2<br><small>100’s</small></div>
+        <div>2611<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">22</div>
+        <div class="name">Rishabh Pant</div>
+        <div>43<br><small>Matches</small></div>
+        <div>75<br><small>Inns</small></div>
+        <div>42.11<br><small>Avg</small></div>
+        <div>73.62<br><small>SR</small></div>
+        <div>159<br><small>HS</small></div>
+        <div>320<br><small>4’s</small></div>
+        <div>73<br><small>6’s</small></div>
+        <div>15<br><small>50’s</small></div>
+        <div>6<br><small>100’s</small></div>
+        <div>2948<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">23</div>
+        <div class="name">Navjot Sidhu</div>
+        <div>51<br><small>Matches</small></div>
+        <div>78<br><small>Inns</small></div>
+        <div>42.13<br><small>Avg</small></div>
+        <div>44.88<br><small>SR</small></div>
+        <div>201<br><small>HS</small></div>
+        <div>358<br><small>4’s</small></div>
+        <div>38<br><small>6’s</small></div>
+        <div>15<br><small>50’s</small></div>
+        <div>9<br><small>100’s</small></div>
+        <div>3202<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">24</div>
+        <div class="name">Murali Vijay</div>
+        <div>61<br><small>Matches</small></div>
+        <div>105<br><small>Inns</small></div>
+        <div>38.28<br><small>Avg</small></div>
+        <div>46.29<br><small>SR</small></div>
+        <div>167<br><small>HS</small></div>
+        <div>467<br><small>4’s</small></div>
+        <div>33<br><small>6’s</small></div>
+        <div>15<br><small>50’s</small></div>
+        <div>12<br><small>100’s</small></div>
+        <div>3982<br><small>Runs</small></div>
+      </div>
+
+      <div class="player-row">
+        <div class="rank">25</div>
+        <div class="name">Ajit Wadekar</div>
+        <div>37<br><small>Matches</small></div>
+        <div>71<br><small>Inns</small></div>
+        <div>31.07<br><small>Avg</small></div>
+        <div>87.21<br><small>SR</small></div>
+        <div>143<br><small>HS</small></div>
+        <div>217<br><small>4’s</small></div>
+        <div>2<br><small>6’s</small></div>
+        <div>14<br><small>50’s</small></div>
+        <div>1<br><small>100’s</small></div>
+        <div>2113<br><small>Runs</small></div>
+      </div>
+
+
+    </div>
+
+  </div>
+</body>
+</html>
