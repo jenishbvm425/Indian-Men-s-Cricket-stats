@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Player Cards</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #edf2fa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .players {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .player-card {
+      position: relative;
+      width: 300px;
+      border-radius: 16px;
+      background: #d2ddf5;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .player-card:hover {
+      transform: translateY(-10px) scale(1.03);
+    }
+
+    .player-header {
+      font-weight: 700;
+      font-size: 18px;
+      padding: 16px;
+    }
+
+    .player-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 3px solid #204f96;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    .jersey {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #f96c25;
+      margin-top: 30px;
+      background-color:#204f96 ;
+      
+    }
+
+    .player-info {
+      display: flex;
+      justify-content: space-around;
+      padding: 12px;
+      background: #e3f2fd;
+      font-size: 14px;
+    }
+
+    .info-block {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    /* Triangle Decoration */
+    .triangle {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 830px solid transparent;
+      border-top: 60px solid #063172;
+      transition: all 0.5s ease-in-out;
+      z-index: 1;
+    }
+
+    .player-card:hover .triangle {
+      bottom: 0;
+      border-top-color: #d12e0e;
+    }
+  </style>
+</head>
+<body>
+
+<h2>GRADE A+</h2>
+<div class="players">
+
+  <div class="player-card">
+    <div class="player-header">Rohit Sharma</div>
+    <img class="player-img" src="assets/rohit.png" alt="Rohit Sharma">
+    <div class="jersey">45</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>37</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Virat Kohli</div>
+    <img class="player-img" src="assets/virat.png" alt="Virat Kohli">
+    <div class="jersey">18</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>36</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Jasprit Bumrah</div>
+    <img class="player-img" src="assets/bumrah.png" alt="Jasprit Bumrah">
+    <div class="jersey">93</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>31</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Ravindra Jadeja</div>
+    <img class="player-img" src="assets/jadeja.png" alt="Ravindra Jadeja">
+    <div class="jersey">8</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">All Rounder</div></div>
+      <div class="info-block"><div>Age</div><div>36</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+  <h2>GREADE A</h2>
+  <div class="players">
+  <div class="player-card">
+    <div class="player-header">Ravichandran Ashwin</div>
+    <img class="player-img" src="assets/ashvin.webp" alt="Rohit Sharma">
+    <div class="jersey">99</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>38</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Mohammad Shami</div>
+    <img class="player-img" src="assets/shami.png" alt="Virat Kohli">
+    <div class="jersey">11</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>34</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Mohammed Siraj</div>
+    <img class="player-img" src="assets/siraj.png" alt="Jasprit Bumrah">
+    <div class="jersey">13</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>31</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Kl Rahul</div>
+    <img class="player-img" src="assets/rahul.png" alt="Ravindra Jadeja">
+    <div class="jersey">1</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Wicket keeper</div></div>
+      <div class="info-block"><div>Age</div><div>33</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+</div>
+<div class="player-card">
+    <div class="player-header">Shubman Gill</div>
+    <img class="player-img" src="assets/shubhman.png" alt="Rohit Sharma">
+    <div class="jersey">77</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>25</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Hardik Pandya</div>
+    <img class="player-img" src="assets/hardik.png" alt="Virat Kohli">
+    <div class="jersey">33</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">All Rounder</div></div>
+      <div class="info-block"><div>Age</div><div>31</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+  <div class="player-card">
+    <div class="player-header">shikhar dhavan</div>
+    <img class="player-img" src="assets/" alt="Rohit Sharma">
+    <div class="jersey">42</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>37</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">yashasvi jaiswal</div>
+    <img class="player-img" src="assets/jaiswal.png" alt="Virat Kohli">
+    <div class="jersey">64</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>23</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+  <h2>GRADE B</h2>
+<div class="players">
+
+  <div class="player-card">
+    <div class="player-header">Suryakumar yadav</div>
+    <img class="player-img" src="assets/yadav.png" alt="Rohit Sharma">
+    <div class="jersey">63</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Batter</div></div>
+      <div class="info-block"><div>Age</div><div>34</div></div>
+      <div class="info-block"><div>Style</div><div>RHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Rishabh pant</div>
+    <img class="player-img" src="assets/rishabh.png" alt="Virat Kohli">
+    <div class="jersey">17</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Wicket keeper</div></div>
+      <div class="info-block"><div>Age</div><div>27</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Kuldeep yadav</div>
+    <img class="player-img" src="assets/kuldeep.png" alt="Jasprit Bumrah">
+    <div class="jersey">23</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>30</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-header">Axar Patel</div>
+    <img class="player-img" src="assets/axar.png" alt="Ravindra Jadeja">
+    <div class="jersey">20</div>
+    <div class="player-info">
+      <div class="info-block"><div class="label">Bowler</div></div>
+      <div class="info-block"><div>Age</div><div>31</div></div>
+      <div class="info-block"><div>Style</div><div>LHB</div></div>
+    </div>
+    <div class="triangle"></div>
+  </div>
+  <H2>GRADE C</H2>
+  <div class="players">
+
+    <div class="player-card">
+      <div class="player-header">Rinku Singh</div>
+      <img class="player-img" src="assets/rinkusingh.avif" alt="Rohit Sharma">
+      <div class="jersey">35</div>
+      <div class="player-info">
+        <div class="info-block"><div class="label">Batter</div></div>
+        <div class="info-block"><div>Age</div><div>27</div></div>
+        <div class="info-block"><div>Style</div><div>RHB</div></div>
+      </div>
+      <div class="triangle"></div>
+    </div>
+  
+    <div class="player-card">
+      <div class="player-header">Tilak varma</div>
+      <img class="player-img" src="assets/tilak.png" alt="Virat Kohli">
+      <div class="jersey">72</div>
+      <div class="player-info">
+        <div class="info-block"><div class="label">Batter</div></div>
+        <div class="info-block"><div>Age</div><div>22</div></div>
+        <div class="info-block"><div>Style</div><div>LHB</div></div>
+      </div>
+      <div class="triangle"></div>
+    </div>
+    <div class="player-card">
+        <div class="player-header">Ruturaj Gaikwad</div>
+        <img class="player-img" src="assets/gaikwad.png" alt="Rohit Sharma">
+        <div class="jersey">31</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Batter</div></div>
+          <div class="info-block"><div>Age</div><div>28</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Shardul Thakur</div>
+        <img class="player-img" src="assets/shardul.jpeg" alt="Rohit Sharma">
+        <div class="jersey">54</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>33</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Shivam Dube</div>
+        <img class="player-img" src="assets/dube.png" alt="Rohit Sharma">
+        <div class="jersey">25</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">All Rounder</div></div>
+          <div class="info-block"><div>Age</div><div>31</div></div>
+          <div class="info-block"><div>Style</div><div>LHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Ravi Bishnoi</div>
+        <img class="player-img" src="assets/ravi.png" alt="Rohit Sharma">
+        <div class="jersey">45</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>24</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Jitesh Sharma</div>
+        <img class="player-img" src="assets/jitesh.avif" alt="Rohit Sharma">
+        <div class="jersey">6</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Wicketkeeper Batter</div></div>
+          <div class="info-block"><div>Age</div><div>31</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Washington Sundar</div>
+        <img class="player-img" src="assets/sundar.png" alt="Rohit Sharma">
+        <div class="jersey">5</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">All Rounder</div></div>
+          <div class="info-block"><div>Age</div><div>25</div></div>
+          <div class="info-block"><div>Style</div><div>LHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Mukesh kumar</div>
+        <img class="player-img" src="assets/mukesh.png" alt="Rohit Sharma">
+        <div class="jersey">49</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>31</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Sanju Samson</div>
+        <img class="player-img" src="assets/sanju.png" alt="Rohit Sharma">
+        <div class="jersey">9</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Wicket keeper</div></div>
+          <div class="info-block"><div>Age</div><div>30</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Arshdeep Singh</div>
+        <img class="player-img" src="assets/arshdeep.png" alt="Rohit Sharma">
+        <div class="jersey">2</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>26</div></div>
+          <div class="info-block"><div>Style</div><div>LHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">ks bharat</div>
+        <img class="player-img" src="assets/ksbharat.png" alt="Rohit Sharma">
+        <div class="jersey">14</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Wicket keeper</div></div>
+          <div class="info-block"><div>Age</div><div>31</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Prasidh krishna</div>
+        <img class="player-img" src="assets/prasidh.webp" alt="Rohit Sharma">
+        <div class="jersey">24</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>29</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Avesh Khan</div>
+        <img class="player-img" src="assets/avesh khan.avif" alt="Rohit Sharma">
+        <div class="jersey">65</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Bowler</div></div>
+          <div class="info-block"><div>Age</div><div>28</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">Rajat patidar</div>
+        <img class="player-img" src="assets/rajatpatidar.avif" alt="Rohit Sharma">
+        <div class="jersey">87</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Batter</div></div>
+          <div class="info-block"><div>Age</div><div>31</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+      <div class="player-card">
+        <div class="player-header">sarfaraz Khan</div>
+        <img class="player-img" src="assets/sarfarajkhan.avif" alt="Rohit Sharma">
+        <div class="jersey">97</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">Batter</div></div>
+          <div class="info-block"><div>Age</div><div>27</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+    
+      <div class="player-card">
+        <div class="player-header">Dhruv jurel</div>
+        <img class="player-img" src="assets/dhruvjurel.avif" alt="Virat Kohli">
+        <div class="jersey">16</div>
+        <div class="player-info">
+          <div class="info-block"><div class="label">wicket keeper</div></div>
+          <div class="info-block"><div>Age</div><div>24</div></div>
+          <div class="info-block"><div>Style</div><div>RHB</div></div>
+        </div>
+        <div class="triangle"></div>
+      </div>
+</div>
+
+</body>
+</html>
