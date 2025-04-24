@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .top-tabs {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: fit-content;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 40px;
+    background: white;
+    color: #444;
+    border: none;
+    font-size: 1.00rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .tab a{
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  
+  .tab.active {
+    background-color: #d3523f;
+    color: white;
+    border-radius: 25px;
+  }
+  
+  /* Container */
+  .container {
+    margin-left: -10px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-section {
+    border: 1px solid #dce1f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: white;
+    overflow: hidden;
+    width: 320px;
+    
+    
+  }
+  
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  .rankpage{
+    display: flex;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .title {
+    flex: 1;
+    font-weight: 600;
+    color: #3a3a3a;
+  }
+  .team a{
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  
+  .arrow {
+    
+    transition: transform 0.3s;
+  }
+  
+  
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown Body */
+  .dropdown-body {
+    padding: 0 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    padding: 8px 0;
+    font-weight: 500;
+    color: #1d1e2c;
+    cursor: pointer;
+  }
+  .item a{
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  .item:hover{
+    background-color: rgb(219, 235, 249);
+    border-radius: 4px;
+    padding-left: 10px;
+    
+  }
+  .item.selected {
+    background-color: #d7e7f7;
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+  
