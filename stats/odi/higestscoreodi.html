@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Indian ODI Batsmen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      margin: 20px;
+      color: #333;
+    }
+
+    .top-player {
+      display: flex;
+      background-color: #0a4a8f;
+      color: white;
+      border-radius: 12px;
+      padding: 20px;
+      align-items: center;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .top-player img {
+      border-radius: 12px;
+      margin-right: 20px;
+      height: 140px;
+    }
+
+    .top-player-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-player h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .stat-box {
+      background-color: #144d91;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .high-score-box {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #c8f1ff;
+      color: #0a4a8f;
+      padding: 10px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .high-score-box span {
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0a4a8f;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #0a4a8f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Highlighted Top Player -->
+  <div class="top-player">
+    <img src="rohit.png" alt="Rohit Sharma">
+    <div class="top-player-info">
+      <h1>#1 Rohit SHARMA</h1>
+      <div class="stats">
+        <div class="stat-box">Matches<br>273</div>
+        <div class="stat-box">Inns<br>265</div>
+        <div class="stat-box">Avg.<br>48.76</div>
+        <div class="stat-box">SR<br>92.80</div>
+        <div class="stat-box">HS<br>264</div>
+        <div class="stat-box">4’s<br>1045</div>
+        <div class="stat-box">6’s<br>344</div>
+        <div class="stat-box">50’s<br>58</div>
+        <div class="stat-box">100’s<br>32</div>
+        <div class="stat-box">Runs<br>11168</div>
+      </div>
+    </div>
+    <div class="high-score-box">
+      <span>264</span>
+      Highest Score
+    </div>
+  </div>
+
+  <!-- Table for others -->
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Player</th><th>Matches</th><th>Inns</th><th>Avg</th><th>SR</th><th>HS</th><th>4’s</th><th>6’s</th><th>50’s</th><th>100’s</th><th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2</td><td>Virender Sehwag</td><td>251</td><td>245</td><td>35.05</td><td>104.33</td><td>219</td><td>1132</td><td>136</td><td>38</td><td>15</td><td>8273</td></tr>
+      <tr><td>3</td><td>Ishan Kishan</td><td>27</td><td>24</td><td>42.40</td><td>102.19</td><td>210</td><td>95</td><td>33</td><td>7</td><td>1</td><td>933</td></tr>
+      <tr><td>4</td><td>Shubman Gill</td><td>55</td><td>55</td><td>59.04</td><td>99.56</td><td>208</td><td>313</td><td>59</td><td>15</td><td>8</td><td>2775</td></tr>
+      <tr><td>5</td><td>Sachin Tendulkar</td><td>463</td><td>452</td><td>44.83</td><td>86.23</td><td>200</td><td>2016</td><td>195</td><td>96</td><td>49</td><td>18426</td></tr>
+      <tr><td>6</td><td>MS Dhoni</td><td>350</td><td>297</td><td>50.57</td><td>87.56</td><td>183</td><td>826</td><td>229</td><td>73</td><td>10</td><td>10773</td></tr>
+      <tr><td>7</td><td>Sourav Ganguly</td><td>311</td><td>300</td><td>41.02</td><td>73.70</td><td>183</td><td>1122</td><td>190</td><td>72</td><td>22</td><td>11363</td></tr>
+      <tr><td>8</td><td>Virat Kohli</td><td>302</td><td>290</td><td>57.88</td><td>93.34</td><td>183</td><td>1325</td><td>152</td><td>74</td><td>51</td><td>14181</td></tr>
+      <tr><td>9</td><td>Kapil Dev</td><td>225</td><td>198</td><td>23.79</td><td>95.07</td><td>175</td><td>291</td><td>67</td><td>14</td><td>1</td><td>3783</td></tr>
+      <tr><td>10</td><td>Dinesh Mongia</td><td>57</td><td>51</td><td>27.95</td><td>71.47</td><td>159</td><td>122</td><td>8</td><td>4</td><td>1</td><td>1230</td></tr>
+      <tr><td>11</td><td>Rahul Dravid</td><td>344</td><td>318</td><td>39.16</td><td>71.23</td><td>153</td><td>950</td><td>42</td><td>83</td><td>12</td><td>10889</td></tr>
+      <tr><td>12</td><td>Mohammad Azharuddin</td><td>334</td><td>308</td><td>36.92</td><td>74.02</td><td>153</td><td>622</td><td>77</td><td>58</td><td>7</td><td>9378</td></tr>
+      <tr><td>13</td><td>Yuvraj Singh</td><td>304</td><td>278</td><td>36.55</td><td>87.67</td><td>150</td><td>908</td><td>155</td><td>52</td><td>14</td><td>8701</td></tr>
+      <tr><td>14</td><td>Gautam Gambhir</td><td>147</td><td>143</td><td>39.68</td><td>85.25</td><td>150</td><td>561</td><td>17</td><td>34</td><td>11</td><td>5238</td></tr>
+      <tr><td>15</td><td>Shikhar Dhawan</td><td>167</td><td>164</td><td>44.11</td><td>91.35</td><td>143</td><td>842</td><td>79</td><td>39</td><td>17</td><td>6793</td></tr>
+      <tr><td>16</td><td>Navjot Sidhu</td><td>136</td><td>127</td><td>37.08</td><td>69.72</td><td>134</td><td>335</td><td>44</td><td>33</td><td>6</td><td>4413</td></tr>
+      <tr><td>17</td><td>VVS Laxman</td><td>86</td><td>83</td><td>30.76</td><td>71.23</td><td>131</td><td>222</td><td>4</td><td>10</td><td>6</td><td>2338</td></tr>
+<tr><td>18</td><td>Shreyas Iyer</td><td>70</td><td>65</td><td>48.22</td><td>100.00</td><td>128</td><td>262</td><td>72</td><td>22</td><td>5</td><td>2845</td></tr>
+<tr><td>19</td><td>Rishabh Pant</td><td>31</td><td>27</td><td>33.50</td><td>106.21</td><td>125</td><td>91</td><td>26</td><td>5</td><td>1</td><td>871</td></tr>
+<tr><td>20</td><td>Ambati Rayudu</td><td>55</td><td>50</td><td>47.05</td><td>79.04</td><td>124</td><td>145</td><td>30</td><td>10</td><td>3</td><td>1694</td></tr>
+<tr><td>21</td><td>Kris Srikkanth</td><td>146</td><td>145</td><td>29.01</td><td>71.74</td><td>123</td><td>-</td><td>-</td><td>27</td><td>4</td><td>4091</td></tr>
+<tr><td>22</td><td>Yusuf Pathan</td><td>57</td><td>41</td><td>27.00</td><td>113.60</td><td>123</td><td>62</td><td>43</td><td>3</td><td>2</td><td>810</td></tr>
+<tr><td>23</td><td>Kedar Jadhav</td><td>73</td><td>52</td><td>42.09</td><td>101.60</td><td>120</td><td>141</td><td>24</td><td>6</td><td>2</td><td>1389</td></tr>
+<tr><td>24</td><td>Ajay Jadeja</td><td>196</td><td>179</td><td>37.47</td><td>69.79</td><td>119</td><td>366</td><td>85</td><td>30</td><td>6</td><td>5359</td></tr>
+<tr><td>25</td><td>Suresh Raina</td><td>226</td><td>194</td><td>35.31</td><td>93.50</td><td>116</td><td>476</td><td>120</td><td>36</td><td>5</td><td>5615</td></tr>
+
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Batting Averages</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+.top-card {
+  display: flex;
+  align-items: center;
+  background: #164a96;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-image img {
+  height: 240px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
+
+.player-details {
+  flex-grow: 1;
+}
+
+.player-details h1 {
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+.player-details h1 span {
+  font-weight: normal;
+  font-size: 20px;
+  display: block;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stats > div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 80px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.stats strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.badge {
+  background: #dff9fb;
+  color: #164a96;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.badge span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+thead {
+  background: #2980b9;
+  color: white;
+}
+
+tbody tr:hover {
+  background: #f0f9ff;
+}
+
+  </style>
+</head>
+<body>
+  <div class="top-card">
+    <div class="player-image">
+      <img src="shubbhman.png" alt="Shubman Gill">
+    </div>
+    <div class="player-details">
+      <h1>#1 <span>Shubman</span> GILL</h1>
+      <div class="stats">
+        <div>Matches<br><strong>55</strong></div>
+        <div>Inns<br><strong>55</strong></div>
+        <div>Avg.<br><strong>59.04</strong></div>
+        <div>SR<br><strong>99.56</strong></div>
+        <div>HS<br><strong>208</strong></div>
+        <div>4’s<br><strong>313</strong></div>
+        <div>6’s<br><strong>59</strong></div>
+        <div>50’s<br><strong>15</strong></div>
+        <div>100’s<br><strong>8</strong></div>
+        <div>Runs<br><strong>2775</strong></div>
+      </div>
+    </div>
+    <div class="badge">59.04<br><span>Highest Average</span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Player</th>
+        <th>Matches</th>
+        <th>Inns</th>
+        <th>Avg</th>
+        <th>SR</th>
+        <th>HS</th>
+        <th>4’s</th>
+        <th>6’s</th>
+        <th>50’s</th>
+        <th>100’s</th>
+        <th>Runs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2</td><td>Virat Kohli</td><td>302</td><td>290</td><td>57.88</td><td>93.34</td><td>183</td><td>1325</td><td>152</td><td>74</td><td>51</td><td>14181</td></tr>
+      <tr><td>3</td><td>MS Dhoni</td><td>350</td><td>297</td><td>50.57</td><td>87.56</td><td>183</td><td>826</td><td>229</td><td>73</td><td>10</td><td>10773</td></tr>
+      <tr><td>4</td><td>KL Rahul</td><td>85</td><td>79</td><td>49.08</td><td>88.17</td><td>112</td><td>235</td><td>67</td><td>18</td><td>7</td><td>3043</td></tr>
+      <tr><td>5</td><td>Rohit Sharma</td><td>273</td><td>265</td><td>48.76</td><td>92.80</td><td>264</td><td>1045</td><td>344</td><td>58</td><td>32</td><td>11168</td></tr>
+      <tr><td>6</td><td>Shreyas Iyer</td><td>70</td><td>65</td><td>48.22</td><td>100.00</td><td>128</td><td>262</td><td>72</td><td>22</td><td>5</td><td>2845</td></tr>
+      <tr><td>7</td><td>Ambati Rayudu</td><td>55</td><td>50</td><td>47.05</td><td>79.04</td><td>124</td><td>145</td><td>30</td><td>10</td><td>3</td><td>1694</td></tr>
+<tr><td>8</td><td>Sachin Tendulkar</td><td>463</td><td>452</td><td>44.83</td><td>86.23</td><td>200</td><td>2016</td><td>195</td><td>96</td><td>49</td><td>18426</td></tr>
+<tr><td>9</td><td>Shikhar Dhawan</td><td>167</td><td>164</td><td>44.11</td><td>91.35</td><td>143</td><td>842</td><td>79</td><td>39</td><td>17</td><td>6793</td></tr>
+<tr><td>10</td><td>Ishan Kishan</td><td>27</td><td>24</td><td>42.40</td><td>102.19</td><td>210</td><td>95</td><td>33</td><td>7</td><td>1</td><td>933</td></tr>
+<tr><td>11</td><td>Kedar Jadhav</td><td>73</td><td>52</td><td>42.09</td><td>101.60</td><td>120</td><td>141</td><td>24</td><td>6</td><td>2</td><td>1389</td></tr>
+<tr><td>12</td><td>Sourav Ganguly</td><td>311</td><td>300</td><td>41.02</td><td>73.70</td><td>183</td><td>1122</td><td>190</td><td>72</td><td>22</td><td>11363</td></tr>
+<tr><td>13</td><td>Gautam Gambhir</td><td>147</td><td>143</td><td>39.68</td><td>85.25</td><td>150</td><td>561</td><td>17</td><td>34</td><td>11</td><td>5238</td></tr>
+<tr><td>14</td><td>Rahul Dravid</td><td>344</td><td>318</td><td>39.16</td><td>71.23</td><td>153</td><td>950</td><td>42</td><td>83</td><td>12</td><td>10889</td></tr>
+<tr><td>15</td><td>Ajay Jadeja</td><td>196</td><td>179</td><td>37.47</td><td>69.79</td><td>119</td><td>366</td><td>85</td><td>30</td><td>6</td><td>5359</td></tr>
+<tr><td>16</td><td>Navjot Sidhu</td><td>136</td><td>127</td><td>37.08</td><td>69.72</td><td>134</td><td>335</td><td>44</td><td>33</td><td>6</td><td>4413</td></tr>
+<tr><td>17</td><td>Mohammad Azharuddin</td><td>334</td><td>308</td><td>36.92</td><td>74.02</td><td>153</td><td>622</td><td>77</td><td>58</td><td>7</td><td>9378</td></tr>
+<tr><td>18</td><td>Yuvraj Singh</td><td>304</td><td>278</td><td>36.55</td><td>87.67</td><td>150</td><td>908</td><td>155</td><td>52</td><td>14</td><td>8701</td></tr>
+<tr><td>19</td><td>Suresh Raina</td><td>226</td><td>194</td><td>35.31</td><td>93.50</td><td>116</td><td>476</td><td>120</td><td>36</td><td>5</td><td>5615</td></tr>
+<tr><td>20</td><td>Ajinkya Rahane</td><td>90</td><td>87</td><td>35.26</td><td>78.63</td><td>111</td><td>293</td><td>33</td><td>24</td><td>3</td><td>2962</td></tr>
+<tr><td>21</td><td>Sunil Gavaskar</td><td>108</td><td>102</td><td>35.13</td><td>62.26</td><td>103</td><td>234</td><td>21</td><td>27</td><td>1</td><td>3092</td></tr>
+<tr><td>22</td><td>Virender Sehwag</td><td>251</td><td>245</td><td>35.05</td><td>104.33</td><td>219</td><td>1132</td><td>136</td><td>38</td><td>15</td><td>8273</td></tr>
+<tr><td>23</td><td>Dilip Vengsarkar</td><td>129</td><td>120</td><td>34.73</td><td>67.74</td><td>105</td><td>228</td><td>24</td><td>23</td><td>1</td><td>3508</td></tr>
+<tr><td>24</td><td>Rishabh Pant</td><td>31</td><td>27</td><td>33.50</td><td>106.21</td><td>125</td><td>91</td><td>26</td><td>5</td><td>1</td><td>871</td></tr>
+<tr><td>25</td><td>Hemang Badani</td><td>40</td><td>36</td><td>33.34</td><td>73.47</td><td>100</td><td>68</td><td>10</td><td>4</td><td>1</td><td>867</td></tr>
+ 
+    </tbody>
+  </table>
+</body>
+</html>
